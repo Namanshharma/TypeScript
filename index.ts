@@ -71,3 +71,30 @@ const checkYourOrderStatus = (action: OrderStatus): void => {
     }
 }
 
+
+// ----------------------------------------------------------------------- Type guards -----------------------------------------------------------------------------
+
+// we have the type guards to provide more strictness to the code by using some properties like
+//
+// ==> typeof ( to check the specific type of the varible, suppose if the type of the varible is string only then we are going to do something )
+// ==> instanceof ( similar to typeof, this instanceof property is used with the objects and classes )
+// ==> Apart from this, we also have the option of Custom type guard but that I will learn in future
+
+class dog { bow = () => console.log("bow bow"); }
+class cat { meow = () => console.log("meow meow") }
+const produceSound = (args: dog | cat) => { args instanceof dog ? console.log(args.bow) : args.meow }
+
+
+
+// ------------------------------------------------------------------------- Utilities --------------------------------------------------------------------------------
+// in the utilities we have some extra properties which we can assign to some interfaces , classes , variables according to our convenience
+
+// ==> PARTIAL < Class or interface Name > :- by using this we are telling to the object that all of the properties are OPTIONAL
+// ==> REQUIRED < Class or interface Name > :- by using this we are telling to the object that all of the properties are MENDATORY 
+
+interface User { Name: string; Age: Number; Occupation: string }
+const obj1: Partial<User> = { Name: "Naman Sharma" };
+const obj2: Required<User> = { Name: "Naman Sharma", Age: 27, Occupation: "SDE" };
+
+// ==> READONLY :- We can provide the readonly property to any variable and then we only read the value of that variable as we are not able to assign any value to
+//                 that except constructor of class or after the first initialization
