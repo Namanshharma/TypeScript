@@ -74,13 +74,47 @@
 // }
 
 // pattern :- hollow square
-let n = 5;
-for (let i = 0; i < n; i++) {
-    for (let j = 0; j < n; j++) {
-        if (i == 0 || j == 0 || i == n - 1 || j == n - 1) {
-            process.stdout.write("*");
-        }
-        else { process.stdout.write(" ") };
-    }
-    console.log();
-}
+// let n = 5;
+// for (let i = 0; i < n; i++) {
+//     for (let j = 0; j < n; j++) {
+//         if (i == 0 || j == 0 || i == n - 1 || j == n - 1) {
+//             process.stdout.write("*");
+//         }
+//         else { process.stdout.write(" ") };
+//     }
+//     console.log();
+// }
+
+// pattern :- Inverted and rotated half pyramid
+// const n = 5;
+// for (let i = 0; i < n; i++) {
+//     for (let j = 0; j < n - i - 1; j++) {
+//         process.stdout.write(" ");
+//     }
+//     for (let k = 0; k <= i; k++) {
+//         process.stdout.write("*");
+//     }
+//     console.log();
+// }
+
+// pattern :- inverted half pyramid with numbers
+// const n = 5;
+// for (let i = 0; i < n; i++) {
+//     for (let j = 0; j <= n - i - 1; j++) {
+//         process.stdout.write((j + 1).toString());
+//     }
+//     console.log();
+// }
+
+// pattern floyd's triangle
+// const n = 5; let x = 1;
+// for (let i = 0; i <= n; i++) {
+//     for (let j = 0; j < i; j++) {
+//         process.stdout.write(x.toString() + " ");
+//         x++;
+//     }
+//     for (let j = 0; j < n - i - 1; j++) {
+//         process.stdout.write(" ");
+//     }
+//     console.log();
+// }
