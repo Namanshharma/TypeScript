@@ -1,6 +1,5 @@
 //------------------------------------------------------------------------------------------------ Loops --------------------------------------------------------------------------------------------------------------
 
-
 // Print number from 1- 10
 // for (let i = 0; i <= 10; i++) { console.log(i); }
 
@@ -175,3 +174,28 @@
 //     console.log();
 // }
 
+
+
+// ---------------------------------------------------------------------- Arrays -----------------------------------------------------------------------------------------------------
+
+// const array: number[] = [1, 2, 3, 4, 5, 6, 7];
+
+// Linear Search
+const arr: number[] = [23, 43, 5, 6, 3, 333, 23, 53, 567, 9764, 7454, 32, 324];
+const key: number = 1;
+
+// const LinearSearch = (arr: number[], key: number) => {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (key == arr[i]) return true;
+//     }
+//     return false;
+// }
+// console.log(LinearSearch(arr, key) == true ? "Key is present in the Array" : "Didn't found in the array");
+
+// Find the larget in the given array;
+const findLargest = (arr: number[]) => {
+    for (let i = 0; i < arr.length; i++) {
+
+    }
+    return -1;
+}
