@@ -175,7 +175,6 @@
 // }
 
 
-
 // ---------------------------------------------------------------------- Arrays -----------------------------------------------------------------------------------------------------
 
 // const array: number[] = [1, 2, 3, 4, 5, 6, 7];
@@ -193,9 +192,21 @@ const key: number = 1;
 // console.log(LinearSearch(arr, key) == true ? "Key is present in the Array" : "Didn't found in the array");
 
 // Find the larget in the given array;
-const findLargest = (arr: number[]) => {
-    for (let i = 0; i < arr.length; i++) {
+// const findLargest = (arr: number[]): number => {
+//     let largest = Number.MIN_SAFE_INTEGER;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] > largest) largest = arr[i];
+//     }
+//     return largest;
+// }
+// console.log("Largest in array is :- " + findLargest(arr))
 
-    }
-    return -1;
-}
+// Find the smallest in the given array
+// const findSmallest = (arr: number[]): number => {
+//     let smallest = Number.MAX_SAFE_INTEGER;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] < smallest) smallest = arr[i];
+//     }
+//     return smallest;
+// }
+// console.log("Smallest in array is :- " + findSmallest(arr));
