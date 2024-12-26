@@ -180,7 +180,7 @@
 // const array: number[] = [1, 2, 3, 4, 5, 6, 7];
 
 // Linear Search
-const arr: number[] = [23, 43, 5, 6, 3, 333, 23, 53, 567, 9764, 7454, 32, 324];
+const array: number[] = [23, 43, 5, 6, 3, 333, 23, 53, 567, 9764, 7454, 32, 324];
 const key: number = 333;
 
 // const LinearSearch = (arr: number[], key: number) => {
@@ -229,16 +229,21 @@ const key: number = 333;
 // console.log(response > 0 ? "Key is at :- " + response : "Key doesn't present in the array :- " + response);
 
 // Reverse the array
-const reverseArray = (arr: number[]): void => {
-    for (let i = 0; i < arr.length; i++) {
+// const reverseArray = (array: number[]): void => {
+//     let start: number = 0; let end: number = array.length - 1;
+//     while (start < end) {
+//         const temp: number = array[start];
+//         array[start] = array[end];
+//         array[end] = temp;
+//         start++; end--;
+//     }
+// }
+// const printTheArray = (array: number[]): void => {
+//     for (let i: number = 0; i < array.length; i++) {
+//         process.stdout.write(array[i].toString() + " ");
+//     }
+// };
+// reverseArray(array);
+// printTheArray(array);
 
-    }
-}
-
-const printTheArray = (arr: number[]): void => {
-    for (let i = 0; i < arr.length; i++) {
-        process.stdout.write(arr[i].toString() + " ");
-    }
-}
-reverseArray(arr);
-printTheArray(arr);
+// pairs in an array
