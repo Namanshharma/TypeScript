@@ -181,7 +181,7 @@
 
 // Linear Search
 const arr: number[] = [23, 43, 5, 6, 3, 333, 23, 53, 567, 9764, 7454, 32, 324];
-const key: number = 1;
+const key: number = 333;
 
 // const LinearSearch = (arr: number[], key: number) => {
 //     for (let i = 0; i < arr.length; i++) {
@@ -210,3 +210,35 @@ const key: number = 1;
 //     return smallest;
 // }
 // console.log("Smallest in array is :- " + findSmallest(arr));
+
+// Binary Search ---- only applicable if the given array is SORTED
+// const sortedArray: number[] = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+// const keyForSortedArray: number = 20;
+
+// const binarySearch = (sortedArray: number[], keyForSortedArray: number): number => {
+//     let start = 0; let end = sortedArray.length - 1;
+//     while (start <= end) {
+//         let mid = Math.floor((start + end) / 2);              // here for the optimization we can use another formula and that is
+//         if (sortedArray[mid] == keyForSortedArray) return mid;
+//         else if (sortedArray[mid] < keyForSortedArray) start = mid + 1;
+//         else end = mid - 1;
+//     }
+//     return -1;
+// }
+// const response = binarySearch(sortedArray, keyForSortedArray);
+// console.log(response > 0 ? "Key is at :- " + response : "Key doesn't present in the array :- " + response);
+
+// Reverse the array
+const reverseArray = (arr: number[]): void => {
+    for (let i = 0; i < arr.length; i++) {
+
+    }
+}
+
+const printTheArray = (arr: number[]): void => {
+    for (let i = 0; i < arr.length; i++) {
+        process.stdout.write(arr[i].toString() + " ");
+    }
+}
+reverseArray(arr);
+printTheArray(arr);
