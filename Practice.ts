@@ -238,12 +238,24 @@ const key: number = 333;
 //         start++; end--;
 //     }
 // }
-// const printTheArray = (array: number[]): void => {
-//     for (let i: number = 0; i < array.length; i++) {
-//         process.stdout.write(array[i].toString() + " ");
-//     }
-// };
+const printTheArray = (array: number[]): void => {
+    for (let i: number = 0; i < array.length; i++) {
+        process.stdout.write(array[i].toString() + " ");
+    }
+    console.log();
+};
 // reverseArray(array);
 // printTheArray(array);
 
-// pairs in an array
+// pairs in an array            ::--            Total number of pairs are -- ( n ( n-1 ) ) / 2
+// const printPairs = (arr: number[]): void => {
+//     for (let i: number = 0; i < arr.length; i++) {
+//         process.stdout.write("I :- " + i + "    ");
+//         for (let j: number = i + 1; j < arr.length; j++) {
+//             process.stdout.write(`(${arr[i]},${arr[j]})\t`);
+//         }
+//         console.log();
+//     }
+// }
+// printTheArray(array);
+// printPairs(array);
