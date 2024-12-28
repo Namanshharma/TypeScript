@@ -338,4 +338,24 @@ const printTheArray = (array: number[]): void => {
 
 // }
 // const trappedWaterArray: number[] = [4, 2, 0, 6, 3, 2, 5];
-// console.log("Total trapped water is :- " + calculateTrappingRainWater(trappedWaterArray));
+// console.log("Total trapped water is :- " + calculateTrappingRainWater(trappedWaterArray));           // TC :- O(n) <<---- derived from the array which we passed as an argument
+
+// Bug and sell stocks                                      Formula :- Profit = SellPrice - BuyPrice;
+// const buySellStocks = (stocksPrice: number[]): number => {
+//     let buyPrice: number = Number.MAX_SAFE_INTEGER; let maxProfit: number = 0;
+//     for (let i: number = 0; i < stocksPrice.length; i++) {
+//         if (buyPrice < stocksPrice[i]) {
+//             const profit: number = stocksPrice[i] - buyPrice;
+//             maxProfit = Math.max(maxProfit, profit);
+//         }
+//         else {
+//             buyPrice = stocksPrice[i];
+//         }
+//     }
+//     return maxProfit;
+// }
+// const stocksPrice: number[] = [7, 1, 5, 3, 6, 4];
+// console.log("Max profit is :- " + buySellStocks(stocksPrice));              // TC :- O(n)
+
+
+// ---------------------------------------------------------------------- 2-D arrays -----------------------------------------------------------------------------------------------------
