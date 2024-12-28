@@ -305,3 +305,37 @@ const printTheArray = (array: number[]): void => {
 // }
 // const arrr: number[] = [-2, -3, 4, -1, -2, 1, 5, -3];
 // console.log("Here is max sum of sub array by using Kadan's algo :- " + kadansMaxSubArraySum(arrr));
+
+// Trapping of rainwater                        <<---- here we got to know about the auxiliary array
+// Trapped Rainwater = ( WaterHeight - BarHeight ) * WidthOfBar    <<---- from these 3 things BarHeight will comes from Array , Bar width will comes from question.
+// Main question is about WaterHeight    <<---- And to find this, we need to find the max height from the left bars by standing on the currrent bar and similar for right bars
+// Once we get the max of left and right boundary then we will get the minimum from both of those 2 values :- ( ( Min ( Max ( left boundry ) , Max ( right boundry ) ) ) - bar height ) * bar width
+// Now to calculate the Max of left boundry and max of right boundry ::---- we need to use the AUXILARY ARRAY / HELPER ARRAY
+// In the aux arrays we will create one array for left max boundries and another for right max boundries
+// For the left max boundry we will check the height of current bar and then compare it with last bar max left boundry and will do similar thing for right aux array
+
+// const calculateTrappingRainWater = (trappedWaterArray: number[]): number => {
+//     // calculate left max boundry
+//     const leftBoundryArray: number[] = new Array(trappedWaterArray.length);
+//     leftBoundryArray[0] = trappedWaterArray[0];
+//     for (let i = 1; i < trappedWaterArray.length; i++) {
+//         leftBoundryArray[i] = Math.max(trappedWaterArray[i], leftBoundryArray[i - 1]);// through this formula we are comparing current height of bar from Main array with last index height from left auxiliary array
+//     }
+
+//     // calculate right max boundry
+//     const rightBondryArray: number[] = new Array(trappedWaterArray.length);
+//     rightBondryArray[rightBondryArray.length - 1] = trappedWaterArray[trappedWaterArray.length - 1];
+//     for (let i = trappedWaterArray.length - 2; i >= 0; i--) {           // here always remember that for right boundry we need to start from back of the array
+//         rightBondryArray[i] = Math.max(trappedWaterArray[i], rightBondryArray[i + 1]);
+//     }
+
+//     // apply the formula and then return the result
+//     let trappedRainWater: number = 0;
+//     for (let i = 0; i < trappedWaterArray.length; i++) {
+//         trappedRainWater += ((Math.min(leftBoundryArray[i], rightBondryArray[i])) - trappedWaterArray[i]) * 1;      // formula :- ( water height - bar height ) * bar width
+//     }
+//     return trappedRainWater;
+
+// }
+// const trappedWaterArray: number[] = [4, 2, 0, 6, 3, 2, 5];
+// console.log("Total trapped water is :- " + calculateTrappingRainWater(trappedWaterArray));
