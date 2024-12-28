@@ -396,3 +396,24 @@ const printTheArray = (array: number[]): void => {
 // }
 // const spiralArray: number[][] = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]];
 // printSpiralMatrix(spiralArray);
+
+// Diagonal sum
+// const diagonalSum = (array: number[][]): void => {
+//     let primaryDiagonalSum: number = 0; let secondayDiagonalSum: number = 0;
+//     for (let i: number = 0; i < array.length; i++) {
+//         primaryDiagonalSum += array[i][i];
+//         if (i != array.length - 1 - i) {
+//             secondayDiagonalSum += array[i][array.length - i - 1];
+//         }
+//     }
+//     process.stdout.write("Total Diagonal sum is :- " + (primaryDiagonalSum + secondayDiagonalSum));
+// }
+// const diagonalMatrix: number[][] = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]];
+// diagonalSum(diagonalMatrix);                            // O(n) optimized approach but for the brute force we can use the nested two loops here
+
+// Stair case problem or search in a sorted matrix
+const searchInSortedMatrix = (array: number[][]): void => {
+
+}
+const searchMatrix: number[][] = [[10, 20, 30, 40], [15, 25, 35, 45], [27, 29, 37, 48], [32, 33, 39, 50]];
+searchInSortedMatrix(searchMatrix);
