@@ -293,4 +293,15 @@ const printTheArray = (array: number[]): void => {
 // }
 // console.log("Here is the max Sum of Sub array :- " + printMaxOfSubArray(array));
 
-// print the max sum of sub array                                  <<---- by using the prefix sum approach which is little bit optimized from the brute force approach
+// print the sub array sum by using KADAN'S ALGORITHM                               <<---- this is the most optimized approach to find max sub array sum TC :- O(n)
+// const kadansMaxSubArraySum = (array: number[]): number => {
+//     let currentSum: number = 0; let maxSum: number = Number.MIN_SAFE_INTEGER;
+//     for (let i = 0; i < array.length; i++) {
+//         currentSum += array[i];
+//         if (currentSum < 0) currentSum = 0;
+//         maxSum = Math.max(currentSum, maxSum);
+//     }
+//     return maxSum;
+// }
+// const arrr: number[] = [-2, -3, 4, -1, -2, 1, 5, -3];
+// console.log("Here is max sum of sub array by using Kadan's algo :- " + kadansMaxSubArraySum(arrr));
