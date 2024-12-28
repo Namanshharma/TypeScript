@@ -359,3 +359,40 @@ const printTheArray = (array: number[]): void => {
 
 
 // ---------------------------------------------------------------------- 2-D arrays -----------------------------------------------------------------------------------------------------
+
+// const twoDArray = new Array(3).fill(Array(3))                                This is how we can declare the 2-D array in js
+
+// Spiral matrix                    <<---- to resolve this, mainly we need to consider the border cases of our matrix like startRow, endRow , startColumn and endColumn
+// const printSpiralMatrix = (array: number[][]): void => {
+//     let startRow: number = 0; let endRow: number = array.length - 1; //3
+//     let startColumn: number = 0; let endColumn: number = array[0].length - 1 // 3;
+
+//     while (startRow <= endRow && startColumn <= endColumn) {                                 // condition is very important in this case
+
+//         for (let i = startColumn; i <= endColumn; i++) {
+//             process.stdout.write(array[startRow][i].toString() + " ");                                             // top row
+//         }
+
+//         for (let j = startRow; j < endRow; j++) {
+//             process.stdout.write(array[j + 1][endColumn].toString() + " ");                                        // right column
+//         }
+
+//         for (let i = endColumn; i > startColumn; i--) {
+//             if (startColumn == endColumn) {
+//                 break;
+//             }
+//             process.stdout.write(array[endRow][i - 1].toString() + " ");                                           // bottom row
+//         }
+
+//         for (let j = endRow - 1; j > startRow; j--) {
+//             if (startRow == endRow) {
+//                 break;
+//             }
+//             process.stdout.write(array[j][startColumn].toString() + " ");                                          // left column
+//         }
+
+//         startRow++; startColumn++; endRow--; endColumn--;
+//     }
+// }
+// const spiralArray: number[][] = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]];
+// printSpiralMatrix(spiralArray);
