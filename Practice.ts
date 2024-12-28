@@ -212,8 +212,8 @@ const key: number = 333;
 // console.log("Smallest in array is :- " + findSmallest(arr));
 
 // Binary Search ---- only applicable if the given array is SORTED
-// const sortedArray: number[] = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
-// const keyForSortedArray: number = 20;
+const sortedArray: number[] = [2, 4, 6, 8, 10];
+const keyForSortedArray: number = 20;
 
 // const binarySearch = (sortedArray: number[], keyForSortedArray: number): number => {
 //     let start = 0; let end = sortedArray.length - 1;
@@ -259,3 +259,38 @@ const printTheArray = (array: number[]): void => {
 // }
 // printTheArray(array);
 // printPairs(array);
+
+// print the subarray of an array                       :::--- There is no need to return the array from function becoz it is
+// const printSubArray = (array: number[]): void => {
+//     for (let i = 0; i < array.length; i++) {
+//         for (let j = i + 1; j < array.length; j++) {
+//             for (let k = i; k <= j; k++) {
+//                 process.stdout.write(`${array[k]} `)
+//             }
+//             process.stdout.write("\t");
+//         }
+//         console.log();
+//     }
+// }
+// printSubArray(sortedArray);
+
+// print the max sum of sub array                               <<---- it's time complexity is O(n^3) which is the worst time complexity
+// const printMaxOfSubArray = (array: number[]): number => {
+//     let maxSubArraySum: number = Number.MIN_SAFE_INTEGER;
+//     for (let i = 0; i < array.length; i++) {
+//         for (let j = i + 1; j < array.length; j++) {
+//             let inidividualSubArraySum: number = 0;
+//             for (let k = i; k <= j; k++) {
+//                 process.stdout.write(array[k].toString() + " ");
+//                 inidividualSubArraySum += array[k];
+//             }
+//             process.stdout.write("Total Sum of this Sub Array is :- " + inidividualSubArraySum.toString());
+//             console.log();
+//             maxSubArraySum = Math.max(inidividualSubArraySum, maxSubArraySum);
+//         }
+//     }
+//     return maxSubArraySum;
+// }
+// console.log("Here is the max Sum of Sub array :- " + printMaxOfSubArray(array));
+
+// print the max sum of sub array                                  <<---- by using the prefix sum approach which is little bit optimized from the brute force approach
