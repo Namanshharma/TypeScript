@@ -411,9 +411,18 @@ const printTheArray = (array: number[]): void => {
 // const diagonalMatrix: number[][] = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]];
 // diagonalSum(diagonalMatrix);                            // O(n) optimized approach but for the brute force we can use the nested two loops here
 
-// Stair case problem or search in a sorted matrix
-const searchInSortedMatrix = (array: number[][]): void => {
-
-}
-const searchMatrix: number[][] = [[10, 20, 30, 40], [15, 25, 35, 45], [27, 29, 37, 48], [32, 33, 39, 50]];
-searchInSortedMatrix(searchMatrix);
+// // Stair case search or search in a sorted matrix
+// const searchInSortedMatrix = (array: number[][], key: number): boolean => {
+//     let row: number = 0; let column: number = array[0].length - 1;         // by definig the row = 0 and column = 3 we are stating that we are starting from top right cell of matrix
+//     while (row < array.length && column >= 0) {                            // if we want to start from the 2nd corner case like left bottom then our row and column initialization will changes
+//         if (array[row][column] == key) {
+//             process.stdout.write("Key is found at :- " + row + "," + column + "\t");
+//             return true;
+//         }
+//         else if (key > array[row][column]) { row++; }
+//         else { column--; }
+//     }
+//     return false;
+// }
+// const searchMatrix: number[][] = [[10, 20, 30, 40], [15, 25, 35, 45], [27, 29, 37, 48], [32, 33, 39, 50]];
+// searchInSortedMatrix(searchMatrix, 39) == true ? console.log("Key is present") : console.log("Key does not exists in matrix");
