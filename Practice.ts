@@ -442,7 +442,17 @@ const printTheArray = (array: number[]): void => {
 // console.log(checkPalindrome("palindrome"));                                       // O(n)
 
 // Find the shortest path to reach at the given direction
-const findDirection = (str: string): void => {
-    
-}
-console.log(findDirection("WNEENESENNN"));
+// const findDirection = (str: string): number => {
+//     str = str.toUpperCase();
+//     let x1: number = 0; let y1: number = 0; let x2: number = 0; let y2: number = 0;
+//     for (let i: number = 0; i < str.length; i++) {
+//         if (str.charAt(i) === "W") x2--;
+//         else if (str.charAt(i) === "E") x2++;
+//         else if (str.charAt(i) === "N") y2++;
+//         else y2--;
+//     }
+//     return Math.sqrt(Math.pow((x2 - x1),2) + Math.pow((y2 - y1),2));
+// }
+// console.log(findDirection("WNEENESENNN"));      // For the displacement, we need to use sqrt((x2 - x1)^2 + (y2-y1)^2)
+
+// 
