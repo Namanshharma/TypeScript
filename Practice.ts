@@ -426,3 +426,23 @@ const printTheArray = (array: number[]): void => {
 // }
 // const searchMatrix: number[][] = [[10, 20, 30, 40], [15, 25, 35, 45], [27, 29, 37, 48], [32, 33, 39, 50]];
 // searchInSortedMatrix(searchMatrix, 39) == true ? console.log("Key is present") : console.log("Key does not exists in matrix");
+
+
+// ------------------------------------------------------------------------------- Strings -----------------------------------------------------------------------------------------
+// In JavaScript, Length is a property in Array and Strigs unlike in java we have Length method in Strings whereas Length is a property in Arrays
+// Also remember, Strings are IM-MUTABLE <<---- Which means
+
+// Check if the string is palindrome or not
+// const checkPalindrome = (str: string): boolean => {
+//     for (let i: number = 0; i <= Math.ceil(str.length / 2); i++) {
+//         if (str.charAt(i) !== str.charAt(str.length - 1 - i)) return false;
+//     }
+//     return true;
+// }
+// console.log(checkPalindrome("palindrome"));                                       // O(n)
+
+// Find the shortest path to reach at the given direction
+const findDirection = (str: string): void => {
+    
+}
+console.log(findDirection("WNEENESENNN"));
