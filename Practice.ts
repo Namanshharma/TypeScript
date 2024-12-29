@@ -455,4 +455,15 @@ const printTheArray = (array: number[]): void => {
 // }
 // console.log(findDirection("WNEENESENNN"));      // For the displacement, we need to use sqrt((x2 - x1)^2 + (y2-y1)^2)
 
-// 
+// For the given set of strings , print the largest string by LEXICOGRAPHICALLY
+
+// const largestString = (stringArray: string[]): void => {
+//     let largestString: string = stringArray[0];
+//     for (let i: number = 0; i < stringArray.length; i++) {
+//         if (largestString.localeCompare(stringArray[i]) < 0) {
+//             largestString = stringArray[i];
+//         }
+//     }
+//     process.stdout.write(largestString);
+// }
+// largestString(["apple", "mango", "banana"]);  // O ( n * x ) where X is the length of string and n is hte number of strings present in array like length of an array because localeCompare method goes char by char and check which char is greater 
