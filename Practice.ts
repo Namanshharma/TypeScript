@@ -466,4 +466,21 @@ const printTheArray = (array: number[]): void => {
 //     }
 //     process.stdout.write(largestString);
 // }
-// largestString(["apple", "mango", "banana"]);  // O ( n * x ) where X is the length of string and n is hte number of strings present in array like length of an array because localeCompare method goes char by char and check which char is greater 
+// largestString(["apple", "mango", "banana"]);  // O ( n * x ) where X is the length of string and n is hte number of strings present in array like length of an array because localeCompare method goes char by char and check which char is greater
+
+// Convert each letter of word into uppercase
+const firstLetterToUpperCase = (str: string): void => {
+    let newString = str.charAt(0).toUpperCase();
+    for (let i: number = 1; i < str.length; i++) {
+        if (str.charAt(i) == " ") {
+            newString += str.charAt(i);
+            newString += str.charAt(i + 1).toUpperCase();
+            i++;
+        }
+        else {
+            newString += str.charAt(i);
+        }
+    }
+    process.stdout.write(newString);
+}
+firstLetterToUpperCase("hi! my name is naman sharma");
