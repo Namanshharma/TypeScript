@@ -485,15 +485,14 @@ const printTheArray = (array: number[]): void => {
 // firstLetterToUpperCase("hi! my name is naman sharma");                      // O(n)
 
 // String Compression like aaabbbccdddd     ---->>      a3b3c2d4
-const stringCompression = (str: string): void => {
-    let number: number = 0; let responseString: string = "";
-    for (let i: number = 0; i < str.length; i++) {
-        if (str.charAt(i) == str.charAt(i + 1)) {
-            number++;
-        }
-        else {
-            responseString += str.charAt(i);
-        }
-    }
-}
-stringCompression("aaabbbccdddd");
+// const stringCompression = (str: string): void => {
+//     let responseString: string = "";
+//     for (let i: number = 0; i < str.length; i++) {
+//         let number = 1;
+//         while (str.charAt(i) == str.charAt(i + 1) && i < str.length - 1) { number++; i++; }
+//         responseString += str.charAt(i);
+//         if (number > 1) { responseString += number; }
+//     }
+//     process.stdout.write(responseString);
+// }
+// stringCompression("aaaabbbccdddd");              // TC :- O(n)
