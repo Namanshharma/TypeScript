@@ -469,18 +469,31 @@ const printTheArray = (array: number[]): void => {
 // largestString(["apple", "mango", "banana"]);  // O ( n * x ) where X is the length of string and n is hte number of strings present in array like length of an array because localeCompare method goes char by char and check which char is greater
 
 // Convert each letter of word into uppercase
-const firstLetterToUpperCase = (str: string): void => {
-    let newString = str.charAt(0).toUpperCase();
-    for (let i: number = 1; i < str.length; i++) {
-        if (str.charAt(i) == " ") {
-            newString += str.charAt(i);
-            newString += str.charAt(i + 1).toUpperCase();
-            i++;
+// const firstLetterToUpperCase = (str: string): void => {
+//     let newString = str.charAt(0).toUpperCase();
+//     for (let i: number = 1; i < str.length; i++) {
+//         if (str.charAt(i) == " " && i < str.length) {
+//             newString += str.charAt(i);
+//             newString += str.charAt(i + 1).toUpperCase();
+//             i++;
+//         }
+//         else
+//             newString += str.charAt(i);
+//     }
+//     process.stdout.write(newString);
+// }
+// firstLetterToUpperCase("hi! my name is naman sharma");                      // O(n)
+
+// String Compression like aaabbbccdddd     ---->>      a3b3c2d4
+const stringCompression = (str: string): void => {
+    let number: number = 0; let responseString: string = "";
+    for (let i: number = 0; i < str.length; i++) {
+        if (str.charAt(i) == str.charAt(i + 1)) {
+            number++;
         }
         else {
-            newString += str.charAt(i);
+            responseString += str.charAt(i);
         }
     }
-    process.stdout.write(newString);
 }
-firstLetterToUpperCase("hi! my name is naman sharma");
+stringCompression("aaabbbccdddd");
