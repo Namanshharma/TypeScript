@@ -180,7 +180,7 @@
 // const array: number[] = [1, 2, 3, 4, 5, 6, 7];
 
 // Linear Search
-const array: number[] = [23, 43, 5, 6, 3, 333, 23, 53, 567, 9764, 7454, 32, 324];
+const array: number[] = [23, 43, 5, 6, 3, 333, 23, 53, 567, 9764, 7454, 32, 324, 53];
 const key: number = 333;
 
 // const LinearSearch = (arr: number[], key: number) => {
@@ -544,4 +544,18 @@ const printTheArray = (array: number[]): void => {
 //     if (i == array.length - 1) { process.stdout.write("Sorted"); return; }
 //     checkForSortedArray(array, i + 1);
 // }
-// checkForSortedArray(sortedArray, 0);
+// checkForSortedArray(sortedArray, 0);                                         TC :- O(n)
+
+// Find the first occurance of an element in an array
+// const firstOccurance = (array: number[], i: number, key: number): void => {
+//     if (array[i] == key) {
+//         process.stdout.write("Key is found at :- " + i)
+//         return;
+//     }
+//     if (i == array.length - 1) {
+//         process.stdout.write("Key does not exist");
+//         return;
+//     }
+//     firstOccurance(array, i + 1, key);
+// }
+// firstOccurance(array, 0, 53);                                            TC :- O(n)
