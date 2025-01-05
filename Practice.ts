@@ -516,3 +516,10 @@ const printTheArray = (array: number[]): void => {
 //     process.stdout.write(n + " ");
 // }
 // printIncreasingOrder(10);
+
+// Print the factorial of number n
+const printFactorial = (n: number): number => {
+    if (n == 0) return 1;
+    return n * printFactorial(n - 1);
+}
+console.log(printFactorial(3));
