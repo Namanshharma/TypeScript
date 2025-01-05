@@ -533,6 +533,7 @@ const printTheArray = (array: number[]): void => {
 
 // print the Nth fibonacci number
 const printFibonacci = (n: number): number => {
-    
+    if (n == 0 || n == 1) return n;
+    return printFibonacci(n - 1) + printFibonacci(n - 2);
 }
-console.log(printFibonacci(5));
+console.log(printFibonacci(21));
