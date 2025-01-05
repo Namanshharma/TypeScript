@@ -510,10 +510,9 @@ const printTheArray = (array: number[]): void => {
 // printDecreasingOrder(10);
 
 // print the number from 1 - n in increasing order
-const printIncreasingOrder = (n: number): void => {
-    if (n == 0) return;
-    printIncreasingOrder(n);
-    n -= 1;
-    process.stdout.write(n + " ");
-}
-printIncreasingOrder(10);
+// const printIncreasingOrder = (n: number): void => {
+//     if (n == 0) return;
+//     printIncreasingOrder(n - 1);
+//     process.stdout.write(n + " ");
+// }
+// printIncreasingOrder(10);
