@@ -496,3 +496,24 @@ const printTheArray = (array: number[]): void => {
 //     process.stdout.write(responseString);
 // }
 // stringCompression("aaaabbbccdddd");              // TC :- O(n)
+
+
+// ------------------------------------------------------------------------------ Recursion ----------------------------------------------------------------------------------------------
+
+// print the number from n - 1 in decreasing order
+// const printDecreasingOrder = (n: number): void => {
+//     process.stdout.write(n + " ");
+//     if (n == 1) return;
+//     n -= 1;
+//     printDecreasingOrder(n);
+// }
+// printDecreasingOrder(10);
+
+// print the number from 1 - n in increasing order
+const printIncreasingOrder = (n: number): void => {
+    if (n == 0) return;
+    printIncreasingOrder(n);
+    n -= 1;
+    process.stdout.write(n + " ");
+}
+printIncreasingOrder(10);
