@@ -532,8 +532,16 @@ const printTheArray = (array: number[]): void => {
 // console.log(printSum(5));
 
 // print the Nth fibonacci number
-const printFibonacci = (n: number): number => {
-    if (n == 0 || n == 1) return n;
-    return printFibonacci(n - 1) + printFibonacci(n - 2);
-}
-console.log(printFibonacci(21));
+// const printFibonacci = (n: number): number => {
+//     if (n == 0 || n == 1) return n;
+//     return printFibonacci(n - 1) + printFibonacci(n - 2);
+// }
+// console.log(printFibonacci(21));                             TC :- O(2^n)  <<---- worst time complexity so in future we will learn about DP
+
+// Check if the given array is sorted or not
+// const checkForSortedArray = (array: number[], i: number): void => {
+//     if (array[i] > array[i + 1]) { process.stdout.write("Not sorted"); return; }
+//     if (i == array.length - 1) { process.stdout.write("Sorted"); return; }
+//     checkForSortedArray(array, i + 1);
+// }
+// checkForSortedArray(sortedArray, 0);
