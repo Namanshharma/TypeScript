@@ -518,8 +518,21 @@ const printTheArray = (array: number[]): void => {
 // printIncreasingOrder(10);
 
 // Print the factorial of number n
-const printFactorial = (n: number): number => {
-    if (n == 0) return 1;
-    return n * printFactorial(n - 1);
+// const printFactorial = (n: number): number => {
+//     if (n == 0) return 1;
+//     return n * printFactorial(n - 1);
+// }
+// console.log(printFactorial(3));
+
+// print sum of first N natural numbers
+// const printSum = (n: number): number => {
+//     if (n == 0) return 0;
+//     return n + printSum(n - 1);
+// }
+// console.log(printSum(5));
+
+// print the Nth fibonacci number
+const printFibonacci = (n: number): number => {
+    
 }
-console.log(printFactorial(3));
+console.log(printFibonacci(5));
