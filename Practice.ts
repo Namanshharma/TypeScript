@@ -214,7 +214,6 @@ const key: number = 333;
 // Binary Search ---- only applicable if the given array is SORTED
 const sortedArray: number[] = [2, 4, 6, 8, 10];
 const keyForSortedArray: number = 20;
-
 // const binarySearch = (sortedArray: number[], keyForSortedArray: number): number => {
 //     let start = 0; let end = sortedArray.length - 1;
 //     while (start <= end) {
@@ -313,7 +312,6 @@ const printTheArray = (array: number[]): void => {
 // Now to calculate the Max of left boundry and max of right boundry ::---- we need to use the AUXILARY ARRAY / HELPER ARRAY
 // In the aux arrays we will create one array for left max boundries and another for right max boundries
 // For the left max boundry we will check the height of current bar and then compare it with last bar max left boundry and will do similar thing for right aux array
-
 // const calculateTrappingRainWater = (trappedWaterArray: number[]): number => {
 //     // calculate left max boundry
 //     const leftBoundryArray: number[] = new Array(trappedWaterArray.length);
@@ -321,21 +319,18 @@ const printTheArray = (array: number[]): void => {
 //     for (let i = 1; i < trappedWaterArray.length; i++) {
 //         leftBoundryArray[i] = Math.max(trappedWaterArray[i], leftBoundryArray[i - 1]);// through this formula we are comparing current height of bar from Main array with last index height from left auxiliary array
 //     }
-
 //     // calculate right max boundry
 //     const rightBondryArray: number[] = new Array(trappedWaterArray.length);
 //     rightBondryArray[rightBondryArray.length - 1] = trappedWaterArray[trappedWaterArray.length - 1];
 //     for (let i = trappedWaterArray.length - 2; i >= 0; i--) {           // here always remember that for right boundry we need to start from back of the array
 //         rightBondryArray[i] = Math.max(trappedWaterArray[i], rightBondryArray[i + 1]);
 //     }
-
 //     // apply the formula and then return the result
 //     let trappedRainWater: number = 0;
 //     for (let i = 0; i < trappedWaterArray.length; i++) {
 //         trappedRainWater += ((Math.min(leftBoundryArray[i], rightBondryArray[i])) - trappedWaterArray[i]) * 1;      // formula :- ( water height - bar height ) * bar width
 //     }
 //     return trappedRainWater;
-
 // }
 // const trappedWaterArray: number[] = [4, 2, 0, 6, 3, 2, 5];
 // console.log("Total trapped water is :- " + calculateTrappingRainWater(trappedWaterArray));           // TC :- O(n) <<---- derived from the array which we passed as an argument
@@ -366,31 +361,25 @@ const printTheArray = (array: number[]): void => {
 // const printSpiralMatrix = (array: number[][]): void => {
 //     let startRow: number = 0; let endRow: number = array.length - 1; //3
 //     let startColumn: number = 0; let endColumn: number = array[0].length - 1 // 3;
-
 //     while (startRow <= endRow && startColumn <= endColumn) {                                 // condition is very important in this case
-
 //         for (let i = startColumn; i <= endColumn; i++) {
 //             process.stdout.write(array[startRow][i].toString() + " ");                                             // top row
 //         }
-
 //         for (let j = startRow; j < endRow; j++) {
 //             process.stdout.write(array[j + 1][endColumn].toString() + " ");                                        // right column
 //         }
-
 //         for (let i = endColumn; i > startColumn; i--) {
 //             if (startColumn == endColumn) {
 //                 break;
 //             }
 //             process.stdout.write(array[endRow][i - 1].toString() + " ");                                           // bottom row
 //         }
-
 //         for (let j = endRow - 1; j > startRow; j--) {
 //             if (startRow == endRow) {
 //                 break;
 //             }
 //             process.stdout.write(array[j][startColumn].toString() + " ");                                          // left column
 //         }
-
 //         startRow++; startColumn++; endRow--; endColumn--;
 //     }
 // }
@@ -456,7 +445,6 @@ const printTheArray = (array: number[]): void => {
 // console.log(findDirection("WNEENESENNN"));      // For the displacement, we need to use sqrt((x2 - x1)^2 + (y2-y1)^2)
 
 // For the given set of strings , print the largest string by LEXICOGRAPHICALLY
-
 // const largestString = (stringArray: string[]): void => {
 //     let largestString: string = stringArray[0];
 //     for (let i: number = 0; i < stringArray.length; i++) {
@@ -559,3 +547,8 @@ const printTheArray = (array: number[]): void => {
 //     firstOccurance(array, i + 1, key);
 // }
 // firstOccurance(array, 0, 53);                                            TC :- O(n)
+
+// Find the last occurance of an array
+// const lastOccurance = (array: number[], key: number, i: number): number => {
+// }
+// console.log("Key is found at :- " + lastOccurance(array, 53, 0));
