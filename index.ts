@@ -245,3 +245,11 @@ const unsortedArray: number[] = [23, 434, 2342, 5, 24, 33, 5, 6456, 34, 64, 5, 2
 // printSpiral([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]);
 
 // print Diagonal sum
+// const printDiagonalSum = (array: number[][]): void => {
+//     let diagonalSum: number = 0;
+//     for (let i: number = 0; i < array.length; i++) {
+//         diagonalSum += array[i][i] + array[i][array.length - 1 - i];            // always remember the most optimized way to achieve this
+//     }
+//     process.stdout.write("Diagonal Sum of this array :- " + diagonalSum);
+// }
+// printDiagonalSum([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]);
