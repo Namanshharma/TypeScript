@@ -160,11 +160,11 @@
 //         array[array.length - i - 1] = temp;
 //     }
 // }
-// const printArray = (array: number[]): void => {
-//     for (let i: number = 0; i < array.length; i++) {
-//         process.stdout.write(array[i] + " ");
-//     }
-// }
+const printArray = (array: number[]): void => {
+    for (let i: number = 0; i < array.length; i++) {
+        process.stdout.write(array[i] + " ");
+    }
+}
 const sortedArr: number[] = [2, 4, 5, 6, 8, 10, 12, 15, 18, 21, 22];
 const unsortedArray: number[] = [23, 434, 2342, 5, 24, 33, 5, 6456, 34, 64, 5, 23, 23, 545, 87, 976, 678, 6756];
 // printReverse(unsortedArray);
@@ -183,3 +183,29 @@ const unsortedArray: number[] = [23, 434, 2342, 5, 24, 33, 5, 6456, 34, 64, 5, 2
 // KadansAlgorithm(unsortedArray);          // need to remember the Theory again
 
 // Trapping of rainwater
+// const trappedRainWater = (array: number[]): void => {
+//     printArray(array); console.log();
+//     // calculate the left max boundry for this we need to make the auxiliary array
+//     const leftMaxBoundryArray: number[] = new Array(array.length);
+//     leftMaxBoundryArray[0] = array[0];
+//     for (let i: number = 1; i <= array.length - 1; i++) {                          // also remember about the loop from where it should start for which array
+//         leftMaxBoundryArray[i] = Math.max(array[i], leftMaxBoundryArray[i - 1]);             // always remember how to calculate the left boundry
+//     }
+//     printArray(leftMaxBoundryArray);
+//     console.log();
+//     // calculate the right max boundry
+//     const rightMaxBoundryArray: number[] = new Array(array.length);
+//     rightMaxBoundryArray[array.length - 1] = array[array.length - 1];
+//     for (let i: number = array.length - 2; i >= 0; i--) {
+//         rightMaxBoundryArray[i] = Math.max(array[i], rightMaxBoundryArray[i + 1]);
+//     }
+//     printArray(rightMaxBoundryArray);
+//     console.log();
+//     let trappedWater: number = 0;
+//     // now compare those and use the formaula       ==> ( Water height - bar height ) * bar width
+//     for (let i: number = 0; i < array.length; i++) {
+//         trappedWater += ((Math.min(leftMaxBoundryArray[i], rightMaxBoundryArray[i])) - array[i]) * 1;        // always subtract the bar height from water height
+//     }
+//     process.stdout.write("Here is the total rain water trapped :- " + trappedWater);
+// }
+// trappedRainWater([4, 2, 0, 6, 3, 2, 5]);
