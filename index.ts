@@ -165,6 +165,21 @@
 //         process.stdout.write(array[i] + " ");
 //     }
 // }
-// const unsortedArray: number[] = [23, 434, 2342, 5, 24, 33, 5, 6456, 34, 64, 5, 23, 23, 545, 87, 976, 678, 6756];
+const sortedArr: number[] = [2, 4, 5, 6, 8, 10, 12, 15, 18, 21, 22];
+const unsortedArray: number[] = [23, 434, 2342, 5, 24, 33, 5, 6456, 34, 64, 5, 23, 23, 545, 87, 976, 678, 6756];
 // printReverse(unsortedArray);
 // printArray(unsortedArray);
+
+// Kadan's algorithm to find the max sum
+// const KadansAlgorithm = (array: number[]): void => {
+//     let currentSum: number = 0; let maxSum: number = 0;
+//     for (let i: number = 0; i < array.length; i++) {
+//         currentSum += array[i];
+//         if (currentSum < 0) currentSum = 0;
+//         maxSum = Math.max(maxSum, currentSum);
+//     }
+//     process.stdout.write("Max sum of an array :- " + maxSum);
+// }
+// KadansAlgorithm(unsortedArray);          // need to remember the Theory again
+
+// Trapping of rainwater
