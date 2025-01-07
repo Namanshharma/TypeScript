@@ -253,3 +253,17 @@ const unsortedArray: number[] = [23, 434, 2342, 5, 24, 33, 5, 6456, 34, 64, 5, 2
 //     process.stdout.write("Diagonal Sum of this array :- " + diagonalSum);
 // }
 // printDiagonalSum([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]);
+
+// stair case search
+// const stairCaseSearch = (array: number[][], key: number): string => {
+//     let row: number = 0; let column: number = array.length - 1;
+//     while (row <= array.length - 1 && column >= 0) {                          // in this the main thing is to remember about the LOOP from where it should
+//         if (key == array[row][column]) {                                  // start for the row and end for the columns
+//             return `Key is present at ${row},${column}`;
+//         }
+//         else if (key > array[row][column]) row++;
+//         else column--;
+//     }
+//     return "Key is not present in this matrix";
+// }
+// console.log(stairCaseSearch([[10, 20, 30, 40], [15, 25, 35, 45], [27, 29, 37, 48], [32, 33, 39, 50]], 51));
