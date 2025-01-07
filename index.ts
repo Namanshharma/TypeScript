@@ -152,3 +152,19 @@
 // }
 // process.stdout.write(binarySearch([2, 4, 5, 6, 8, 10, 12, 15, 18, 21, 22], 354).toString());
 
+// print the reverse of an array
+// const printReverse = (array: number[]): void => {
+//     for (let i: number = 0; i < Math.floor(array.length / 2); i++) {
+//         let temp = array[i];
+//         array[i] = array[array.length - i - 1];
+//         array[array.length - i - 1] = temp;
+//     }
+// }
+// const printArray = (array: number[]): void => {
+//     for (let i: number = 0; i < array.length; i++) {
+//         process.stdout.write(array[i] + " ");
+//     }
+// }
+// const unsortedArray: number[] = [23, 434, 2342, 5, 24, 33, 5, 6456, 34, 64, 5, 23, 23, 545, 87, 976, 678, 6756];
+// printReverse(unsortedArray);
+// printArray(unsortedArray);
