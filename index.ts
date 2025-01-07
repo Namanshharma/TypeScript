@@ -125,3 +125,21 @@
 //     process.stdout.write(response.toString());
 // }
 // printReverseByStoring(28734682937);
+
+// check if the number is prime or not
+// const checkPrime = (n: number): boolean => {
+//     if (n == 1 || n == 2 || n == 3) return true;         //always assumes that the number is prime
+//     for (let i: number = 2; i <= Math.sqrt(n); i++) {
+//         if (n % i != 0) {
+//             return true;                                 //always assumes that the number is prime first
+//         }
+//     }
+//     return false;
+// }
+// const x = checkPrime(6);
+// x ? process.stdout.write("Prime Number") : process.stdout.write("Not a prime number");
+
+// Binary Search
+const binarySearch = (array: number[], key: number): void => {
+
+}
