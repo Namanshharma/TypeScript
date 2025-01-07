@@ -209,3 +209,15 @@ const unsortedArray: number[] = [23, 434, 2342, 5, 24, 33, 5, 6456, 34, 64, 5, 2
 //     process.stdout.write("Here is the total rain water trapped :- " + trappedWater);
 // }
 // trappedRainWater([4, 2, 0, 6, 3, 2, 5]);
+
+// perfect time to sell and buy stocks
+// const buySellStocks = (array: number[]): void => {
+//     let buyPrice: number = array[0]; let maxProfit: number = 0;
+//     for (let i: number = 1; i < array.length; i++) {
+//         buyPrice = Math.min(buyPrice, array[i]);
+//         const profit: number = array[i] - buyPrice;
+//         maxProfit = Math.max(maxProfit, profit);
+//     }
+//     process.stdout.write("Max profit till now :- " + maxProfit);
+// }
+// buySellStocks([7, 1, 5, 3, 6, 4]);
