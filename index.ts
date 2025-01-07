@@ -221,3 +221,27 @@ const unsortedArray: number[] = [23, 434, 2342, 5, 24, 33, 5, 6456, 34, 64, 5, 2
 //     process.stdout.write("Max profit till now :- " + maxProfit);
 // }
 // buySellStocks([7, 1, 5, 3, 6, 4]);
+
+// print the spiral matrix
+// const printSpiral = (array: number[][]): void => {
+//     let startRow: number = 0; let endRow: number = array.length - 1;     // always remember about the starting and ending of
+//     let startColumn: number = 0; let endColumn: number = array[0].length - 1;        // rows and columns
+//     while (startRow <= endRow && startColumn <= endColumn) {
+//         for (let i: number = startColumn; i < endColumn; i++) {
+//             process.stdout.write(array[startRow][i] + " ");
+//         }
+//         for (let j: number = startRow; j <= endRow; j++) {
+//             process.stdout.write(array[j][endColumn] + " ");
+//         }
+//         for (let i: number = endColumn - 1; i >= startColumn; i--) {
+//             process.stdout.write(array[endRow][i] + " ");
+//         }
+//         for (let j: number = endRow - 1; j > startRow; j--) {
+//             process.stdout.write(array[j][startColumn] + " ");
+//         }
+//         startRow++; startColumn++; endRow--; endColumn--;
+//     }
+// }
+// printSpiral([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]);
+
+// print Diagonal sum
