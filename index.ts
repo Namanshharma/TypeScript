@@ -140,6 +140,15 @@
 // x ? process.stdout.write("Prime Number") : process.stdout.write("Not a prime number");
 
 // Binary Search
-const binarySearch = (array: number[], key: number): void => {
+// const binarySearch = (array: number[], key: number): number => {
+//     let start: number = 0; let end: number = array.length; let mid: number = 0
+//     while (start <= end) {
+//         mid = Math.floor((start + end) / 2);                                             // rememeber to use the Math.floor method in this
+//         if (key == array[mid]) return mid;
+//         else if (key > array[mid]) start = mid + 1;
+//         else end = mid - 1;
+//     }
+//     return -1;
+// }
+// process.stdout.write(binarySearch([2, 4, 5, 6, 8, 10, 12, 15, 18, 21, 22], 354).toString());
 
-}
