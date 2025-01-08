@@ -315,3 +315,16 @@ const unsortedArray: number[] = [23, 434, 2342, 5, 24, 33, 5, 6456, 34, 64, 5, 2
 //     console.log(responseString);
 // }
 // convertToUpperCase("hi, my name is naman sharma and i am the best  ");
+
+// string compression
+// const stringCompression1 = (str: string): void => {
+//     let newString: string = "";
+//     for (let i: number = 0; i < str.length; i++) {
+//         let count: number = 1;
+//         while (str.charAt(i) == str.charAt(i + 1) && i < str.length - 1) { count++; i++; }  // always remember the condition
+//         newString += str.charAt(i);
+//         if (count > 1) newString += count;     // also remember to append the count only in string if it is greater that 1
+//     }
+//     console.log(newString);
+// }
+// stringCompression1("aaaabbbccdddd");
