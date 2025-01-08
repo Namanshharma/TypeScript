@@ -292,10 +292,26 @@ const unsortedArray: number[] = [23, 434, 2342, 5, 24, 33, 5, 6456, 34, 64, 5, 2
 // shortestPath("WNEENESENNNEEENNN")
 
 // print the largest string by Lexicographic order
-const largestStringByLexicographicOrder = (array: string[]): void => {
-    for (let i: number = 0; i < array.length; i++) {
+// const largestStringByLexicographicOrder = (array: string[]): void => {
+//     let largestString: string = array[0];
+//     for (let i: number = 1; i < array.length - 1; i++) {
+//         if (largestString.localeCompare(array[i]) < 0) largestString = array[i];
+//     }
+//     process.stdout.write(largestString);
+// }
+// largestStringByLexicographicOrder(["apple", "mango", "banana"]); // neeed to remember the name of the function
 
-    }
-}
-
-largestStringByLexicographicOrder(["apple", "mango", "banana"]);
+// Convert each letter into uppercase
+// const convertToUpperCase = (str: string): void => {
+//     let responseString = str.charAt(0).toUpperCase();
+//     for (let i: number = 1; i < str.length; i++) {
+//         if (str.charAt(i) == " " && i < str.length) {
+//             responseString += str.charAt(i);
+//             responseString += str.charAt(i + 1).toUpperCase();  // remember to include the space as well in the original string
+//             i++;
+//         }
+//         else { responseString += str.charAt(i); }       // rememeber to skip the i++ in else block
+//     }
+//     console.log(responseString);
+// }
+// convertToUpperCase("hi, my name is naman sharma and i am the best  ");
