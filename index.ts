@@ -267,3 +267,35 @@ const unsortedArray: number[] = [23, 434, 2342, 5, 24, 33, 5, 6456, 34, 64, 5, 2
 //     return "Key is not present in this matrix";
 // }
 // console.log(stairCaseSearch([[10, 20, 30, 40], [15, 25, 35, 45], [27, 29, 37, 48], [32, 33, 39, 50]], 51));
+
+// check if the string is palindrome or not
+// const checkPalindromeString = (str: string): boolean => {
+//     for (let i: number = 0; i < str.length; i++) {
+//         if (str.charAt(i) != str.charAt(str.length - 1 - i)) return false;
+//     }
+//     return true;
+// }
+// console.log(checkPalindromeString("racecar") ? "It's Palindrome" : "Not a palindrome");
+
+// find the shortest path to reach at the given direction
+// const shortestPath = (str: string): void => {
+//     str.toUpperCase();
+//     let x1: number = 0, x2: number = 0, y1: number = 0, y2: number = 0
+//     for (let i: number = 0; i < str.length; i++) {
+//         if (str.charAt(i) == "N") y2++;
+//         else if (str.charAt(i) == "S") y2--;
+//         else if (str.charAt(i) == "E") x2++;
+//         else x2--;
+//     }
+//     process.stdout.write("Here is the shortest path of given string :- " + Math.floor(Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2))));
+// }
+// shortestPath("WNEENESENNNEEENNN")
+
+// print the largest string by Lexicographic order
+const largestStringByLexicographicOrder = (array: string[]): void => {
+    for (let i: number = 0; i < array.length; i++) {
+
+    }
+}
+
+largestStringByLexicographicOrder(["apple", "mango", "banana"]);
