@@ -574,6 +574,15 @@ const printTheArray = (array: number[]): void => {
 // const printXPowerN = (x: number, n: number): number => {
 //     if (n == 0) return 1;
 //     else if (x == 0) return 0;
-//     return (x * printXPowerN(x, n - 1));
+//     return (x * printXPowerN(x, n - 1));                     // also remember the formula
 // }
-// console.log(printXPowerN(2, 12));
+// console.log(printXPowerN(2, 12));                            // remember here we have 2 base cases           // brute force approach     TC :- O(n)
+
+// print x^n by using optimized approach
+// const printXPowerNOptimized = (x: number, n: number): number => {
+//     if (n == 0) return 1; if (x == 0) return 0;
+//     let calculatePower = printXPowerNOptimized(x, Math.floor(n / 2));
+//     if (Math.floor(n % 2) != 0) return calculatePower * calculatePower * x;
+//     return calculatePower * calculatePower
+// }
+// console.log(printXPowerNOptimized(2, 10));                           // optimized approach TC :- O(log(n));
