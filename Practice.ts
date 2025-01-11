@@ -569,3 +569,11 @@ const printTheArray = (array: number[]): void => {
 //     return i;
 // }
 // console.log(findTheLastOccurance([2, 4, 12, 32, 64, 2, 3, 75, 99, 87, 88, 3], 0, 3));
+
+// print x^n
+// const printXPowerN = (x: number, n: number): number => {
+//     if (n == 0) return 1;
+//     else if (x == 0) return 0;
+//     return (x * printXPowerN(x, n - 1));
+// }
+// console.log(printXPowerN(2, 12));
