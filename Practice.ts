@@ -526,6 +526,17 @@ const printTheArray = (array: number[]): void => {
 // }
 // console.log(printFibonacci(21));                             TC :- O(2^n)  <<---- worst time complexity so in future we will learn about DP
 
+// print the fibonacci series till Nth term
+// const printFibonacciSeries = (a: number, b: number, n: number, count: number): void => {
+//     if (count == n) { return }
+//     let c = a + b;
+//     process.stdout.write(c.toString() + ", ");
+//     count++;
+//     printFibonacciSeries(b, c, n, count);
+// }
+// process.stdout.write("0, 1, ");
+// printFibonacciSeries(0, 1, 35 - 2, 0);
+
 // Check if the given array is sorted or not
 // const checkForSortedArray = (array: number[], i: number): void => {
 //     if (array[i] > array[i + 1]) { process.stdout.write("Not sorted"); return; }
@@ -549,6 +560,12 @@ const printTheArray = (array: number[]): void => {
 // firstOccurance(array, 0, 53);                                            TC :- O(n)
 
 // Find the last occurance of an array
-// const lastOccurance = (array: number[], key: number, i: number): number => {
+// const findTheLastOccurance = (array: number[], i: number, key: number): number => {
+//     if (i == array.length - 1) return -1;
+//     let found = findTheLastOccurance(array, i + 1, key);
+//     if (found != -1 && array[i] == key) {
+//         return found;
+//     }
+//     return i;
 // }
-// console.log("Key is found at :- " + lastOccurance(array, 53, 0));
+// console.log(findTheLastOccurance([2, 4, 12, 32, 64, 2, 3, 75, 99, 87, 88, 3], 0, 3));
