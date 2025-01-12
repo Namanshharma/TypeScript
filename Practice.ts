@@ -610,4 +610,12 @@ const printTheArray = (array: number[]): void => {
 //     process.stdout.write(`Moving ${disc}nd Disc from ${source} to ${destination}\n`);                    // Moving n disc to Destination
 //     towerOfHanoi(disc - 1, helper, source, destination);                             As per our Approach // move n-1 to Destination
 // }
-// towerOfHanoi(3, "Source", "Helper", "Destination");
+// towerOfHanoi(3, "Source", "Helper", "Destination");                                                      // TC :- O(2^n)
+
+// print a string in reverse
+// const printStringInReverse = (str: string, i: number): void => {
+//     if (i == str.length - 1) { return }
+//     printStringInReverse(str, i + 1);
+//     process.stdout.write(str.charAt(i));
+// }
+// printStringInReverse("asdfasdf", 0);
