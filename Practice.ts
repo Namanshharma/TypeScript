@@ -618,4 +618,17 @@ const printTheArray = (array: number[]): void => {
 //     printStringInReverse(str, i + 1);
 //     process.stdout.write(str.charAt(i));
 // }
-// printStringInReverse("asdfasdf", 0);
+// printStringInReverse("asdfasdf", 0);                     // TC :- O(n)
+
+// find the First and Last occurance of element in string
+// var first: number = -1; var last: number = -1;                          // in this question always remember that Start and end variable must be of Static type or declared globally.
+// const findFirstAndLastOccuranceInString = (str: string, key: string, i: number): string => {
+//     if (i == str.length - 1) { return ""; }
+//     if (str.charAt(i) == key) {
+//         if (first < 0) first = i;                                       // always rememeber the condition and make sure to iterate from the starting of string in recurssion
+//         else last = i;
+//     }
+//     findFirstAndLastOccuranceInString(str, key, i + 1);
+//     return "First occurance happens at :- " + first + " and Last occurance happens at :- " + last;
+// }
+// console.log(findFirstAndLastOccuranceInString("sdfasdfasdfasdfasdfasdfasdfasdfasdf", "f", 0));      // There is not need to pass First and Last variables in params      TC :- O(n)
