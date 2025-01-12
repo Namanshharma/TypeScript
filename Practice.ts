@@ -583,7 +583,7 @@ const printTheArray = (array: number[]): void => {
 //     if (Math.floor(n % 2) != 0) return calculatePower * calculatePower * x;
 //     return calculatePower * calculatePower
 // }
-// console.log(printXPowerNOptimized(2, 10));                           // optimized approach TC :- O(log(n));
+// console.log(printXPowerNOptimized(2, 10));                                                                       // optimized approach TC :- O(log(n));
 
 // Tower of Hanoi -- Recursion problem                      ( RULES :- Always move one disc in one step;        :- Always place smaller disc on top of bigger one )
 // for this problem, we generally used Source tower , Helper tower and Destination tower
@@ -632,20 +632,37 @@ const printTheArray = (array: number[]): void => {
 // console.log(findFirstAndLastOccuranceInString("sdfasdfasdfasdfasdfasdfasdfasdfasdf", "f", 0));      // There is not need to pass First and Last variables in params      TC :- O(n)
 
 // Move all x to the end of string
-const moveElementToEndOfString = (str: string, key: string, i: number, newString: string, count: number): void => {
-    if (i == str.length) {
-        if (count > 0) {
-            for (let j = 0; j < count; j++) {
-                newString += key;
-            }
-            process.stdout.write(newString + "  here is the count of element :- " + count);
-        } else {
-            process.stdout.write(newString);
-        }
-        return;
-    }
-    if (str.charAt(i) == key) count++;
-    else newString += str.charAt(i);
-    moveElementToEndOfString(str, key, i + 1, newString, count);
-}
-console.log(moveElementToEndOfString("asfasdfasdfasdfasdfasdfasdfasdf", "f", 0, "", 0));
+// const moveElementToEndOfString = (str: string, key: string, i: number, newString: string, count: number): void => {
+//     if (i == str.length) {
+//         if (count > 0) {
+//             for (let j = 0; j < count; j++) {
+//                 newString += key;
+//             }
+//             process.stdout.write(newString + "  here is the count of element :- " + count);
+//             return;
+//         } else {
+//             process.stdout.write(newString);
+//             return;
+//         }
+//     }
+//     if (str.charAt(i) == key) count++;
+//     else newString += str.charAt(i);
+//     moveElementToEndOfString(str, key, i + 1, newString, count);
+// }
+// moveElementToEndOfString("asfasdfasdfasdfasdfasdfasdfasdf", "f", 0, "", 0);          TC :- O(n)
+
+// Remove Duplicates from String
+// remember that for duplicacy we need to take the auxiliary array (26) length and assume that false is stored at each index. So, we will traverse through each character of string and
+// parallely we will check values of that corresponding index in array if that is false then we will store that character in New String and make that index TRUE in array.
+// Else we will call recurssive function
+// Main thing is to calculate the index of array becoz when a-a = 0 then we need to get the string.charCodeAt(indexFromString) to get the Char Code like a = 97 and d = 100;
+// Through this method, auxiliaryArray[str.charAt(i).charCodeAt(0) - 'a'.charCodeAt(0)]     <<---- we can calculte the index
+// const removeDuplicates = (str: string, i: number, auxiliaryArray: boolean[], newString: string): void => {
+//     if (i == str.length) { process.stdout.write(newString); return; }
+//     if (auxiliaryArray[str.charAt(i).charCodeAt(0) - 'a'.charCodeAt(0)] != true) {
+//         newString += str.charAt(i);
+//         auxiliaryArray[str.charAt(i).charCodeAt(0) - 'a'.charCodeAt(0)] = true;
+//     }
+//     removeDuplicates(str, i + 1, auxiliaryArray, newString);
+// }
+// removeDuplicates("asdfasdfasdfasdfasdfz", 0, new Array(26), "");
