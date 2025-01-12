@@ -665,4 +665,12 @@ const printTheArray = (array: number[]): void => {
 //     }
 //     removeDuplicates(str, i + 1, auxiliaryArray, newString);
 // }
-// removeDuplicates("asdfasdfasdfasdfasdfz", 0, new Array(26), "");
+// removeDuplicates("asdfasdfasdfasdfasdfz", 0, new Array(26), "");                             // TC :- O(n)
+
+// Tilling problem 
+// 
+const tillingProblem = (n: number): number => {
+    if (n == 0 || n == 1) return 1;
+    return tillingProblem(n - 1) + tillingProblem(n - 2);
+}
+console.log(tillingProblem(5));
