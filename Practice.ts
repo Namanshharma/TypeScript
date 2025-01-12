@@ -667,10 +667,18 @@ const printTheArray = (array: number[]): void => {
 // }
 // removeDuplicates("asdfasdfasdfasdfasdfz", 0, new Array(26), "");                             // TC :- O(n)
 
-// Tilling problem 
-// 
-const tillingProblem = (n: number): number => {
-    if (n == 0 || n == 1) return 1;
-    return tillingProblem(n - 1) + tillingProblem(n - 2);
-}
-console.log(tillingProblem(5));
+// Tilling problem
+// Given a "2*n" board and tiles size of "2*1", count the NUMBER OF WAYS to tile the given board using 2*1 tiles.
+// ( A tile can either be placeed horizontally or vertically )
+// ------>>> Take few cases like when there is not board then we also consider one ways. And if there is a board of 2*1 ( 2*n ) then there is only One way to place that tile and that too in
+//           vertical fashion.
+//      ==>> Now take another case where n = 3 board will be 2*3 then in this :- We can 3 tiles in vertical position    :- 2 tiles in Horizontal position along wiht one in vertical position
+//                                                                            :- One vertical first and then 2 in horizontal position
+// ------>>> Now, When we place one Tile in VERTICAL WAY then we left with n-1 space
+// ------>>> Similarly, when we place one tile in HORIZONTAL WAY then we left with n-2 space
+// ------>>> To calculate TOTAL WAYS :- VERTICAL WAYS + HORIZONTAL WAYS
+// const tillingProblem = (n: number): number => {
+//     if (n == 0 || n == 1) return 1;
+//     return tillingProblem(n - 1) + tillingProblem(n - 2);
+// }
+// console.log(tillingProblem(5));
