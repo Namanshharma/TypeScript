@@ -561,12 +561,10 @@ const printTheArray = (array: number[]): void => {
 
 // Find the last occurance of an array
 // const findTheLastOccurance = (array: number[], i: number, key: number): number => {
-//     if (i == array.length - 1) return -1;
-//     let found = findTheLastOccurance(array, i + 1, key);
-//     if (found != -1 && array[i] == key) {
-//         return found;
-//     }
-//     return i;
+//     if (i == array.length) return -1;
+//     let isFound = findTheLastOccurance(array, i + 1, key);
+//     if (isFound == -1 && array[i] == key) return i;                                      // remeber the condition in this
+//     return isFound;
 // }
 // console.log(findTheLastOccurance([2, 4, 12, 32, 64, 2, 3, 75, 99, 87, 88, 3], 0, 3));
 
