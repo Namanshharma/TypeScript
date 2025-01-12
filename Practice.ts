@@ -566,7 +566,7 @@ const printTheArray = (array: number[]): void => {
 //     if (isFound == -1 && array[i] == key) return i;                                      // remeber the condition in this
 //     return isFound;
 // }
-// console.log(findTheLastOccurance([2, 4, 12, 32, 64, 2, 3, 75, 99, 87, 88, 3], 0, 3));
+// console.log(findTheLastOccurance([2, 4, 12, 32, 64, 2, 3, 75, 99, 87, 88, 3], 0, 3));            TC :- O(n)
 
 // print x^n
 // const printXPowerN = (x: number, n: number): number => {
@@ -630,3 +630,22 @@ const printTheArray = (array: number[]): void => {
 //     return "First occurance happens at :- " + first + " and Last occurance happens at :- " + last;
 // }
 // console.log(findFirstAndLastOccuranceInString("sdfasdfasdfasdfasdfasdfasdfasdfasdf", "f", 0));      // There is not need to pass First and Last variables in params      TC :- O(n)
+
+// Move all x to the end of string
+const moveElementToEndOfString = (str: string, key: string, i: number, newString: string, count: number): void => {
+    if (i == str.length) {
+        if (count > 0) {
+            for (let j = 0; j < count; j++) {
+                newString += key;
+            }
+            process.stdout.write(newString + "  here is the count of element :- " + count);
+        } else {
+            process.stdout.write(newString);
+        }
+        return;
+    }
+    if (str.charAt(i) == key) count++;
+    else newString += str.charAt(i);
+    moveElementToEndOfString(str, key, i + 1, newString, count);
+}
+console.log(moveElementToEndOfString("asfasdfasdfasdfasdfasdfasdfasdf", "f", 0, "", 0));
