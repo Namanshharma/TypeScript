@@ -586,3 +586,28 @@ const printTheArray = (array: number[]): void => {
 //     return calculatePower * calculatePower
 // }
 // console.log(printXPowerNOptimized(2, 10));                           // optimized approach TC :- O(log(n));
+
+// Tower of Hanoi -- Recursion problem                      ( RULES :- Always move one disc in one step;        :- Always place smaller disc on top of bigger one )
+// for this problem, we generally used Source tower , Helper tower and Destination tower
+// Let's take an example of 3 discs in which
+// ==> Initially, all 3 discs are presents in Soruce tower and in this case, we will move n-1 discs ( 2 ) in Helper tower by taking help from Destination tower by making Destination
+//     tower as Helper tower. It means move 3rd disc to Helper tower ( 1st step ) and then 2nd disc to Destination tower (2nd step) and then from Helper tower pick 3rd disc and move
+//     it to the Destination tower ( 3rd step )
+// ==> Situation, back from the 1st step in our Source tower we have 1st disc , in our Helper tower we have 2nd and 3rd disc and our Destination tower is empty.
+// ==> Now, pick the 1st disc from Source tower and move it to the Destination tower ( 4th )
+// ==> Situation, our Source tower is empty , Helper tower is having 2nd and 3rd disc and our Destination tower is having 1st disc.
+// ==> Now, we will take the help from Source tower by making it Helper tower and our helper tower will act as Source tower. Now, we will move 3rd disc from newly Source tower to
+//     helper tower ( 5th step ). After this, move 2nd disc from Source tower to our original Destination tower (6ht step). And finally, move 3rd disc from Source tower to Destination
+//     tower (7th step).
+// APPROACH ----->>>>>>> Always move n-1 disc to Helper tower and then move nth disc to Destination tower. And then by making the Source tower as helper tower and vica versa move n-1
+//                       discs to Destination tower by taking help from remaining 2 towers.
+// const towerOfHanoi = (disc: number, source: string, helper: string, destination: string): void => {
+//     if (disc == 1) {
+//         process.stdout.write(`Moving ${disc}nd Disc from ${source} to ${destination}\n`);  // always remember that this problem will not return any thing just print the cases inside it
+//         return;
+//     }
+//     towerOfHanoi(disc - 1, source, destination, helper);                             As per our Approach // always move n-1 disc to Helper
+//     process.stdout.write(`Moving ${disc}nd Disc from ${source} to ${destination}\n`);                    // Moving n disc to Destination
+//     towerOfHanoi(disc - 1, helper, source, destination);                             As per our Approach // move n-1 to Destination
+// }
+// towerOfHanoi(3, "Source", "Helper", "Destination");
