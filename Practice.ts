@@ -651,7 +651,7 @@ const printTheArray = (array: number[]): void => {
 // }
 // moveElementToEndOfString("asfasdfasdfasdfasdfasdfasdfasdf", "f", 0, "", 0);          TC :- O(n)
 
-// Remove Duplicates from String
+// Remove Duplicates from String    <<---- Condition the chars will be from 'a' - 'z'
 // remember that for duplicacy we need to take the auxiliary array (26) length and assume that false is stored at each index. So, we will traverse through each character of string and
 // parallely we will check values of that corresponding index in array if that is false then we will store that character in New String and make that index TRUE in array.
 // Else we will call recurssive function
@@ -682,3 +682,16 @@ const printTheArray = (array: number[]): void => {
 //     return tillingProblem(n - 1) + tillingProblem(n - 2);
 // }
 // console.log(tillingProblem(5));
+
+// Friends pairing problem
+// Given N friends, each one can remain single or can be paired up with some other friend. Each friend can be paired only once.
+// Find out the total number of ways in which friends can remain single or can be paired up
+// ------>>> At each point, we have 2 choice :- Single      :- Paired up
+// ------>>> If our choice is single then N-1 friends are remaining where are if we go for a pair then N-2 friends will remain
+// ------>>> But in case of pair up :- we have to multiply with ( n-1 ) <<---- Big reason is that, when from 2 guys any one will go for a pair then he / she will go to x or y or z guy
+//                                                                      <<---- as well. That's why while pairing, one is always have option to pair will any one from N guys that's why ( N-1 )
+// const friendPairing = (n: number): number => {
+//     if (n == 1 || n == 2) return n;
+//     return friendPairing(n - 1) + (n - 1) * friendPairing(n - 2);
+// }
+// console.log(friendPairing(3));
