@@ -697,14 +697,17 @@ const printTheArray = (array: number[]): void => {
 // console.log(friendPairing(3));
 
 // Binary string problem :- print all the binary string of N size without consecutive ones
-const printBinaryString = (n: number, lastValue: number, newString: string): void => {
-    if (n == 0) {
-        process.stdout.write(newString + "\n");
-        return;
-    }
-    printBinaryString(n - 1, 0, newString + "0");
-    if (lastValue == 0) {
-        printBinaryString(n - 1, 0, newString + "1");
-    }
-}
-printBinaryString(3, 0, "");
+// ------>>> In this, at each step we have 2 choices :- To sit 0 at the current place              :- To sit 1 at the current place
+// Also, we need to take care the case of CONSECUTIVE 1'S and now we will also track our lastplace or last value
+// if in our last place we have 1 then only 0 will sit next else 1 can sit next
+// const printBinaryString = (n: number, lastValue: number, newString: string): void => {
+//     if (n == 0) {
+//         process.stdout.write(newString + "\n");
+//         return;
+//     }
+//     printBinaryString(n - 1, 0, newString + "0");
+//     if (lastValue == 0) {
+//         printBinaryString(n - 1, 1, newString + "1");
+//     }
+// }
+// printBinaryString(3, 0, "");         // Remember :- the process of thinking in the question and call stack is the main and important thing
