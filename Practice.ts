@@ -695,3 +695,16 @@ const printTheArray = (array: number[]): void => {
 //     return friendPairing(n - 1) + (n - 1) * friendPairing(n - 2);
 // }
 // console.log(friendPairing(3));
+
+// Binary string problem :- print all the binary string of N size without consecutive ones
+const printBinaryString = (n: number, lastValue: number, newString: string): void => {
+    if (n == 0) {
+        process.stdout.write(newString + "\n");
+        return;
+    }
+    printBinaryString(n - 1, 0, newString + "0");
+    if (lastValue == 0) {
+        printBinaryString(n - 1, 0, newString + "1");
+    }
+}
+printBinaryString(3, 0, "");
