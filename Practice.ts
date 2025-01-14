@@ -760,3 +760,14 @@ const printTheArray = (array: number[]): void => {
 // }
 // const sortedAndRotatedArray: number[] = [4, 5, 6, 7, 8, 1, 2, 3];
 // console.log(searchInSortedAndRotatedArray(sortedAndRotatedArray, 7));
+
+// Print all the sub seq of string
+// const subSequences = (str: string, i: number, newString: string): void => {
+//     if (i == str.length) {
+//         process.stdout.write(newString + "\n");
+//         return;
+//     }
+//     subSequences(str, i + 1, newString + str.charAt(i));
+//     subSequences(str, i + 1, newString);
+// }
+// subSequences("asdf", 0, "");
