@@ -767,7 +767,23 @@ const printTheArray = (array: number[]): void => {
 //         process.stdout.write(newString + "\n");
 //         return;
 //     }
-//     subSequences(str, i + 1, newString + str.charAt(i));
-//     subSequences(str, i + 1, newString);
+//     subSequences(str, i + 1, newString + str.charAt(i));             // remember we have 2 choices :- one to add into the new string
+//     subSequences(str, i + 1, newString);                                                     //    :- or not to add into the string
 // }
-// subSequences("asdf", 0, "");
+// subSequences("abc", 0, "");                      // TC :- O(2^n)
+
+// print all the UNIQUE sub seq of string
+// const uniqueSubSeq = (str: string, i: number, newString: string, set: Set<string>): void => {
+//     if (i == str.length) {
+//         if (set.has(newString)) return;
+//         else {
+//             process.stdout.write(newString + "\n");
+//             set.add(newString);
+//             return;
+//         }
+//     }
+//     uniqueSubSeq(str, i + 1, newString + str.charAt(i), set);
+//     uniqueSubSeq(str, i + 1, newString, set);
+// }
+// const set: Set<string> = new Set<string>();
+// uniqueSubSeq("aaa", 0, "", set);                     // remember :- to print the unique Sub Strings we need to use the Hash set :- As it will takes the record and store in it
