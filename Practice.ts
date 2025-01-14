@@ -711,3 +711,23 @@ const printTheArray = (array: number[]): void => {
 //     }
 // }
 // printBinaryString(3, 0, "");         // Remember :- the process of thinking in the question and call stack is the main and important thing
+
+// Search in a sorted and Rotated array ( Modified Binary Search ) by using Recurssion      <<---- This is the kind of Binary search in Recurssive fashion
+// const searchInSortedAndRotatedArray = (array: number[], key: number, startingIndex: number, endingIndex: number): number => {
+//     if (startingIndex > endingIndex) return -1;
+
+//     const mid: number = Math.floor(startingIndex + ((endingIndex - startingIndex) / 2));            // we can also use (startingIndex + endingIndex) / 2 ;
+//     if (array[mid] == key) return mid;
+//     else {
+//         if (array[startingIndex] <= array[mid]) {                               // left lane
+//             if (key >= array[startingIndex] && key <= array[mid]) return searchInSortedAndRotatedArray(array, key, startingIndex, mid - 1);
+//             else return searchInSortedAndRotatedArray(array, key, mid + 1, endingIndex);
+//         }
+//         else {                                                                  // right lane
+//             if (key >= array[mid] && key <= array[endingIndex]) return searchInSortedAndRotatedArray(array, key, mid + 1, endingIndex);
+//             else return searchInSortedAndRotatedArray(array, key, startingIndex, mid - 1);
+//         }
+//     }
+// }
+// const sortedAndRotatedArray: number[] = [4, 5, 6, 7, 8, 1, 2, 3];
+// console.log(searchInSortedAndRotatedArray(sortedAndRotatedArray, 7, 0, sortedAndRotatedArray.length - 1));
