@@ -787,3 +787,25 @@ const printTheArray = (array: number[]): void => {
 // }
 // const set: Set<string> = new Set<string>();
 // uniqueSubSeq("aaa", 0, "", set);                     // remember :- to print the unique Sub Strings we need to use the Hash set :- As it will takes the record and store in it
+
+// print Keypad combinations
+// let keyPad: string[] = [".", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tu", "vwx", "yz"];
+// const printKeypadCombinations = (str: string, i: number, newString: string): void => {
+//     if (i == str.length) {
+//         process.stdout.write(newString + "\n");
+//         return;
+//     }
+//     const currentCharacter: string = str.charAt(i);
+//     let mapping = keyPad[currentCharacter.charCodeAt(0) - 0];
+//     for (let j: number = 0; j < mapping.length; j++) {
+//         printKeypadCombinations(str, i + 1, newString + mapping.charAt(j));
+//     }
+// }
+// printKeypadCombinations("23", 0, "")                                     // this is not the correct answer of this but I will address this after some time or in the practice session
+
+
+// ------------------------------------------------------------------ Time Complexity ------------------------------------------------------------------------------------------------
+
+// Big O Notation :- It gives the UPPER BOUND of the code. As, it always gives the WORST CASE complexity. Examples :- 2^n , n^2, n, log(n), 1
+// Big Omega Notation :- It give the LOWER BOUND of the code. As, it always gives the BEST CASE complexity
+// To find the Time Complexity :- Always ingone the constants and then pick the largest term
