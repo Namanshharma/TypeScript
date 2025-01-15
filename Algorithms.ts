@@ -52,6 +52,19 @@ const bubbleArray: number[] = [5, 4, 2, 1, 3];                      // Always re
 //     }
 // }
 // selectionSort(bubbleArray);
-// printArrayAgain(bubbleArray);
+// printArrayAgain(bubbleArray);                            // TC :- O(n^2)
 
-// Insertion Sort
+// Insertion Sort       // Idea is that :- Pick one element from the unsorted array and insert that element into the sorted array by pulling the elements according to appropiate manner
+// const insertionSort = (array: number[]): void => {
+//     for (let i: number = 1; i < array.length; i++) {
+//         let temp: number = array[i];
+//         let j: number = i - 1;
+//         while (j >= 0 && array[j] > temp) {
+//             array[j + 1] = array[j];
+//             j--;
+//         }
+//         array[j + 1] = temp;
+//     }
+// }
+// insertionSort(bubbleArray);
+// printArrayAgain(bubbleArray);
