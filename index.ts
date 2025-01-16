@@ -328,3 +328,41 @@ const unsortedArray: number[] = [23, 434, 2342, 5, 24, 33, 5, 6456, 34, 64, 5, 2
 //     console.log(newString);
 // }
 // stringCompression1("aaaabbbccdddd");
+
+// Algorithms :- Bubble Sort with worst case TC :- O(n^2) and best case time complexity TC :- O(log(n))
+// const bubbleSort = (array: number[]): void => {
+//     for (let i: number = 0; i < array.length; i++) {
+//         let isSwap: boolean = false;
+//         for (let j: number = i + 1; j < array.length; j++) {
+//             if (array[i] > array[j]) {
+//                 const temp = array[i];
+//                 array[i] = array[j];
+//                 array[j] = temp;
+//                 isSwap = true
+//             }
+//         }
+//         if (isSwap == false) {
+//             break;
+//         }
+//     }
+// }
+// bubbleSort(unsortedArrayy);
+
+// Seletion sort :- Idea --> From the unsorted array we need to pick the smallest and move it or in front of the array. Also, in this we will not do swap in the inner loop to avoid
+// unnecessay swaps
+// const selectionSort = (array: number[]): void => {
+//     for (let i: number = 0; i < array.length; i++) {
+//         let smallest: number = i;
+//         for (let j: number = i + 1; j < array.length; j++) {
+//             if (array[j] < array[smallest]) {
+//                 smallest = j;
+//             }
+//         }
+//         const temp = array[i];
+//         array[i] = array[smallest];
+//         array[smallest] = temp;
+//     }
+// }
+// selectionSort(unsortedArrayy);
+const unsortedArrayy: number[] = [4, 2, 5, 6, 1, 9, 3];
+printArray(unsortedArrayy);

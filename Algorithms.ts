@@ -57,14 +57,16 @@ const bubbleArray: number[] = [5, 4, 2, 1, 3];                      // Always re
 // Insertion Sort       // Idea is that :- Pick one element from the unsorted array and insert that element into the sorted array by pulling the elements according to appropiate manner
 // const insertionSort = (array: number[]): void => {
 //     for (let i: number = 1; i < array.length; i++) {
-//         let temp: number = array[i];
+//         let temp: number = array[i];              // always remember the concept of temp variable
 //         let j: number = i - 1;
-//         while (j >= 0 && array[j] > temp) {
-//             array[j + 1] = array[j];
+//         while (j >= 0 && array[j] > temp) {       // right now it is sorting the array in ascending order but if we want to sort it in descending order then we simply need to
+//             array[j + 1] = array[j];              // reverse this condition
 //             j--;
 //         }
 //         array[j + 1] = temp;
 //     }
 // }
-// insertionSort(bubbleArray);
+// insertionSort(bubbleArray);                     // TC :- O(n^2)
 // printArrayAgain(bubbleArray);
+
+// Counting sort
