@@ -364,5 +364,20 @@ const unsortedArray: number[] = [23, 434, 2342, 5, 24, 33, 5, 6456, 34, 64, 5, 2
 //     }
 // }
 // selectionSort(unsortedArrayy);
-const unsortedArrayy: number[] = [4, 2, 5, 6, 1, 9, 3];
-printArray(unsortedArrayy);
+
+// Insertion sort :- Idea --> Assume the first element of an array is sorted array and from the remaining array we will pick the first element then backtrack it to sorted array at its
+// appropiate position
+// const insertionSort = (array: number[]): void => {
+//     for (let i: number = 1; i < array.length; i++) {
+//         let temp: number = array[i];
+//         let j: number = i - 1;
+//         while (j >= 0 && array[j] > temp) {
+//             array[j + 1] = array[j];
+//             j--;
+//         }
+//         array[j + 1] = temp;
+//     }
+// }
+// const unsortedArrayy: number[] = [4, 2, 5, 6, 1, 9, 3];
+// insertionSort(unsortedArrayy);
+// printArray(unsortedArrayy);
