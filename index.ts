@@ -100,284 +100,286 @@
 //                 that except constructor of class or after the first initialization
 
 
+namespace PracticeSprint2 {
 
-// ========================================================== Practice Sprint 2 =======================================================================
-// print the reverse of an given number
-// const printReverse = (n: number): void => {
-//     process.stdout.write(n.toString()+"\n");
-//     while (n > 0) {
-//         const lastDigit = (n % 10);
-//         process.stdout.write(lastDigit.toString());
-//         n = Math.floor(n / 10);                                 // remember this line like we need to Divide first and then we will use floor method
-//     }
-// }
-// printReverse(234543);
+    // ========================================================== Practice Sprint 2 =======================================================================
+    // print the reverse of an given number
+    // const printReverse = (n: number): void => {
+    //     process.stdout.write(n.toString()+"\n");
+    //     while (n > 0) {
+    //         const lastDigit = (n % 10);
+    //         process.stdout.write(lastDigit.toString());
+    //         n = Math.floor(n / 10);                                 // remember this line like we need to Divide first and then we will use floor method
+    //     }
+    // }
+    // printReverse(234543);
 
-// print the reverse of an given number but before print store it in some variable
-// const printReverseByStoring = (n: number): void => {
-//     process.stdout.write(n.toString()+"\n");
-//     let response: number = 0;
-//     while (n > 0) {
-//         const lastDigit: number = n % 10;
-//         response = lastDigit + (response * 10);                    // always remember this formula
-//         n = Math.floor(n / 10);
-//     }
-//     process.stdout.write(response.toString());
-// }
-// printReverseByStoring(28734682937);
+    // print the reverse of an given number but before print store it in some variable
+    // const printReverseByStoring = (n: number): void => {
+    //     process.stdout.write(n.toString()+"\n");
+    //     let response: number = 0;
+    //     while (n > 0) {
+    //         const lastDigit: number = n % 10;
+    //         response = lastDigit + (response * 10);                    // always remember this formula
+    //         n = Math.floor(n / 10);
+    //     }
+    //     process.stdout.write(response.toString());
+    // }
+    // printReverseByStoring(28734682937);
 
-// check if the number is prime or not
-// const checkPrime = (n: number): boolean => {
-//     if (n == 1 || n == 2 || n == 3) return true;         //always assumes that the number is prime
-//     for (let i: number = 2; i <= Math.sqrt(n); i++) {
-//         if (n % i != 0) {
-//             return true;                                 //always assumes that the number is prime first
-//         }
-//     }
-//     return false;
-// }
-// const x = checkPrime(6);
-// x ? process.stdout.write("Prime Number") : process.stdout.write("Not a prime number");
+    // check if the number is prime or not
+    // const checkPrime = (n: number): boolean => {
+    //     if (n == 1 || n == 2 || n == 3) return true;         //always assumes that the number is prime
+    //     for (let i: number = 2; i <= Math.sqrt(n); i++) {
+    //         if (n % i != 0) {
+    //             return true;                                 //always assumes that the number is prime first
+    //         }
+    //     }
+    //     return false;
+    // }
+    // const x = checkPrime(6);
+    // x ? process.stdout.write("Prime Number") : process.stdout.write("Not a prime number");
 
-// Binary Search
-// const binarySearch = (array: number[], key: number): number => {
-//     let start: number = 0; let end: number = array.length; let mid: number = 0
-//     while (start <= end) {
-//         mid = Math.floor((start + end) / 2);                                             // rememeber to use the Math.floor method in this
-//         if (key == array[mid]) return mid;
-//         else if (key > array[mid]) start = mid + 1;
-//         else end = mid - 1;
-//     }
-//     return -1;
-// }
-// process.stdout.write(binarySearch([2, 4, 5, 6, 8, 10, 12, 15, 18, 21, 22], 354).toString());
+    // Binary Search
+    // const binarySearch = (array: number[], key: number): number => {
+    //     let start: number = 0; let end: number = array.length; let mid: number = 0
+    //     while (start <= end) {
+    //         mid = Math.floor((start + end) / 2);                                             // rememeber to use the Math.floor method in this
+    //         if (key == array[mid]) return mid;
+    //         else if (key > array[mid]) start = mid + 1;
+    //         else end = mid - 1;
+    //     }
+    //     return -1;
+    // }
+    // process.stdout.write(binarySearch([2, 4, 5, 6, 8, 10, 12, 15, 18, 21, 22], 354).toString());
 
-// print the reverse of an array
-// const printReverse = (array: number[]): void => {
-//     for (let i: number = 0; i < Math.floor(array.length / 2); i++) {
-//         let temp = array[i];
-//         array[i] = array[array.length - i - 1];
-//         array[array.length - i - 1] = temp;
-//     }
-// }
-const printArray = (array: number[]): void => {
-    for (let i: number = 0; i < array.length; i++) {
-        process.stdout.write(array[i] + " ");
+    // print the reverse of an array
+    // const printReverse = (array: number[]): void => {
+    //     for (let i: number = 0; i < Math.floor(array.length / 2); i++) {
+    //         let temp = array[i];
+    //         array[i] = array[array.length - i - 1];
+    //         array[array.length - i - 1] = temp;
+    //     }
+    // }
+    const printArray = (array: number[]): void => {
+        for (let i: number = 0; i < array.length; i++) {
+            process.stdout.write(array[i] + " ");
+        }
     }
+    const sortedArr: number[] = [2, 4, 5, 6, 8, 10, 12, 15, 18, 21, 22];
+    const unsortedArray: number[] = [23, 434, 2342, 5, 24, 33, 5, 6456, 34, 64, 5, 23, 23, 545, 87, 976, 678, 6756];
+    // printReverse(unsortedArray);
+    // printArray(unsortedArray);
+
+    // Kadan's algorithm to find the max sum
+    // const KadansAlgorithm = (array: number[]): void => {
+    //     let currentSum: number = 0; let maxSum: number = 0;
+    //     for (let i: number = 0; i < array.length; i++) {
+    //         currentSum += array[i];
+    //         if (currentSum < 0) currentSum = 0;
+    //         maxSum = Math.max(maxSum, currentSum);
+    //     }
+    //     process.stdout.write("Max sum of an array :- " + maxSum);
+    // }
+    // KadansAlgorithm(unsortedArray);          // need to remember the Theory again
+
+    // Trapping of rainwater
+    // const trappedRainWater = (array: number[]): void => {
+    //     printArray(array); console.log();
+    //     // calculate the left max boundry for this we need to make the auxiliary array
+    //     const leftMaxBoundryArray: number[] = new Array(array.length);
+    //     leftMaxBoundryArray[0] = array[0];
+    //     for (let i: number = 1; i <= array.length - 1; i++) {                          // also remember about the loop from where it should start for which array
+    //         leftMaxBoundryArray[i] = Math.max(array[i], leftMaxBoundryArray[i - 1]);             // always remember how to calculate the left boundry
+    //     }
+    //     printArray(leftMaxBoundryArray);
+    //     console.log();
+    //     // calculate the right max boundry
+    //     const rightMaxBoundryArray: number[] = new Array(array.length);
+    //     rightMaxBoundryArray[array.length - 1] = array[array.length - 1];
+    //     for (let i: number = array.length - 2; i >= 0; i--) {
+    //         rightMaxBoundryArray[i] = Math.max(array[i], rightMaxBoundryArray[i + 1]);
+    //     }
+    //     printArray(rightMaxBoundryArray);
+    //     console.log();
+    //     let trappedWater: number = 0;
+    //     // now compare those and use the formaula       ==> ( Water height - bar height ) * bar width
+    //     for (let i: number = 0; i < array.length; i++) {
+    //         trappedWater += ((Math.min(leftMaxBoundryArray[i], rightMaxBoundryArray[i])) - array[i]) * 1;        // always subtract the bar height from water height
+    //     }
+    //     process.stdout.write("Here is the total rain water trapped :- " + trappedWater);
+    // }
+    // trappedRainWater([4, 2, 0, 6, 3, 2, 5]);
+
+    // perfect time to sell and buy stocks
+    // const buySellStocks = (array: number[]): void => {
+    //     let buyPrice: number = array[0]; let maxProfit: number = 0;
+    //     for (let i: number = 1; i < array.length; i++) {
+    //         buyPrice = Math.min(buyPrice, array[i]);
+    //         const profit: number = array[i] - buyPrice;
+    //         maxProfit = Math.max(maxProfit, profit);
+    //     }
+    //     process.stdout.write("Max profit till now :- " + maxProfit);
+    // }
+    // buySellStocks([7, 1, 5, 3, 6, 4]);
+
+    // print the spiral matrix
+    // const printSpiral = (array: number[][]): void => {
+    //     let startRow: number = 0; let endRow: number = array.length - 1;     // always remember about the starting and ending of
+    //     let startColumn: number = 0; let endColumn: number = array[0].length - 1;        // rows and columns
+    //     while (startRow <= endRow && startColumn <= endColumn) {
+    //         for (let i: number = startColumn; i < endColumn; i++) {
+    //             process.stdout.write(array[startRow][i] + " ");
+    //         }
+    //         for (let j: number = startRow; j <= endRow; j++) {
+    //             process.stdout.write(array[j][endColumn] + " ");
+    //         }
+    //         for (let i: number = endColumn - 1; i >= startColumn; i--) {
+    //             process.stdout.write(array[endRow][i] + " ");
+    //         }
+    //         for (let j: number = endRow - 1; j > startRow; j--) {
+    //             process.stdout.write(array[j][startColumn] + " ");
+    //         }
+    //         startRow++; startColumn++; endRow--; endColumn--;
+    //     }
+    // }
+    // printSpiral([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]);
+
+    // print Diagonal sum
+    // const printDiagonalSum = (array: number[][]): void => {
+    //     let diagonalSum: number = 0;
+    //     for (let i: number = 0; i < array.length; i++) {
+    //         diagonalSum += array[i][i] + array[i][array.length - 1 - i];            // always remember the most optimized way to achieve this
+    //     }
+    //     process.stdout.write("Diagonal Sum of this array :- " + diagonalSum);
+    // }
+    // printDiagonalSum([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]);
+
+    // stair case search
+    // const stairCaseSearch = (array: number[][], key: number): string => {
+    //     let row: number = 0; let column: number = array.length - 1;
+    //     while (row <= array.length - 1 && column >= 0) {                          // in this the main thing is to remember about the LOOP from where it should
+    //         if (key == array[row][column]) {                                  // start for the row and end for the columns
+    //             return `Key is present at ${row},${column}`;
+    //         }
+    //         else if (key > array[row][column]) row++;
+    //         else column--;
+    //     }
+    //     return "Key is not present in this matrix";
+    // }
+    // console.log(stairCaseSearch([[10, 20, 30, 40], [15, 25, 35, 45], [27, 29, 37, 48], [32, 33, 39, 50]], 51));
+
+    // check if the string is palindrome or not
+    // const checkPalindromeString = (str: string): boolean => {
+    //     for (let i: number = 0; i < str.length; i++) {
+    //         if (str.charAt(i) != str.charAt(str.length - 1 - i)) return false;
+    //     }
+    //     return true;
+    // }
+    // console.log(checkPalindromeString("racecar") ? "It's Palindrome" : "Not a palindrome");
+
+    // find the shortest path to reach at the given direction
+    // const shortestPath = (str: string): void => {
+    //     str.toUpperCase();
+    //     let x1: number = 0, x2: number = 0, y1: number = 0, y2: number = 0
+    //     for (let i: number = 0; i < str.length; i++) {
+    //         if (str.charAt(i) == "N") y2++;
+    //         else if (str.charAt(i) == "S") y2--;
+    //         else if (str.charAt(i) == "E") x2++;
+    //         else x2--;
+    //     }
+    //     process.stdout.write("Here is the shortest path of given string :- " + Math.floor(Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2))));
+    // }
+    // shortestPath("WNEENESENNNEEENNN")
+
+    // print the largest string by Lexicographic order
+    // const largestStringByLexicographicOrder = (array: string[]): void => {
+    //     let largestString: string = array[0];
+    //     for (let i: number = 1; i < array.length - 1; i++) {
+    //         if (largestString.localeCompare(array[i]) < 0) largestString = array[i];
+    //     }
+    //     process.stdout.write(largestString);
+    // }
+    // largestStringByLexicographicOrder(["apple", "mango", "banana"]); // neeed to remember the name of the function
+
+    // Convert each letter into uppercase
+    // const convertToUpperCase = (str: string): void => {
+    //     let responseString = str.charAt(0).toUpperCase();
+    //     for (let i: number = 1; i < str.length; i++) {
+    //         if (str.charAt(i) == " " && i < str.length) {
+    //             responseString += str.charAt(i);
+    //             responseString += str.charAt(i + 1).toUpperCase();  // remember to include the space as well in the original string
+    //             i++;
+    //         }
+    //         else { responseString += str.charAt(i); }       // rememeber to skip the i++ in else block
+    //     }
+    //     console.log(responseString);
+    // }
+    // convertToUpperCase("hi, my name is naman sharma and i am the best  ");
+
+    // string compression
+    // const stringCompression1 = (str: string): void => {
+    //     let newString: string = "";
+    //     for (let i: number = 0; i < str.length; i++) {
+    //         let count: number = 1;
+    //         while (str.charAt(i) == str.charAt(i + 1) && i < str.length - 1) { count++; i++; }  // always remember the condition
+    //         newString += str.charAt(i);
+    //         if (count > 1) newString += count;     // also remember to append the count only in string if it is greater that 1
+    //     }
+    //     console.log(newString);
+    // }
+    // stringCompression1("aaaabbbccdddd");
+
+    // Algorithms :- Bubble Sort with worst case TC :- O(n^2) and best case time complexity TC :- O(log(n))
+    // const bubbleSort = (array: number[]): void => {
+    //     for (let i: number = 0; i < array.length; i++) {
+    //         let isSwap: boolean = false;
+    //         for (let j: number = i + 1; j < array.length; j++) {
+    //             if (array[i] > array[j]) {
+    //                 const temp = array[i];
+    //                 array[i] = array[j];
+    //                 array[j] = temp;
+    //                 isSwap = true
+    //             }
+    //         }
+    //         if (isSwap == false) {
+    //             break;
+    //         }
+    //     }
+    // }
+    // bubbleSort(unsortedArrayy);
+
+    // Seletion sort :- Idea --> From the unsorted array we need to pick the smallest and move it or in front of the array. Also, in this we will not do swap in the inner loop to avoid
+    // unnecessay swaps
+    // const selectionSort = (array: number[]): void => {
+    //     for (let i: number = 0; i < array.length; i++) {
+    //         let smallest: number = i;
+    //         for (let j: number = i + 1; j < array.length; j++) {
+    //             if (array[j] < array[smallest]) {
+    //                 smallest = j;
+    //             }
+    //         }
+    //         const temp = array[i];
+    //         array[i] = array[smallest];
+    //         array[smallest] = temp;
+    //     }
+    // }
+    // selectionSort(unsortedArrayy);
+
+    // Insertion sort :- Idea --> Assume the first element of an array is sorted array and from the remaining array we will pick the first element then backtrack it to sorted array at its
+    // appropiate position
+    // const insertionSort = (array: number[]): void => {
+    //     for (let i: number = 1; i < array.length; i++) {
+    //         let temp: number = array[i];
+    //         let j: number = i - 1;
+    //         while (j >= 0 && array[j] > temp) {
+    //             array[j + 1] = array[j];
+    //             j--;
+    //         }
+    //         array[j + 1] = temp;
+    //     }
+    // }
+    // const unsortedArrayy: number[] = [4, 2, 5, 6, 1, 9, 3];
+    // insertionSort(unsortedArrayy);
+    // printArray(unsortedArrayy);
 }
-const sortedArr: number[] = [2, 4, 5, 6, 8, 10, 12, 15, 18, 21, 22];
-const unsortedArray: number[] = [23, 434, 2342, 5, 24, 33, 5, 6456, 34, 64, 5, 23, 23, 545, 87, 976, 678, 6756];
-// printReverse(unsortedArray);
-// printArray(unsortedArray);
-
-// Kadan's algorithm to find the max sum
-// const KadansAlgorithm = (array: number[]): void => {
-//     let currentSum: number = 0; let maxSum: number = 0;
-//     for (let i: number = 0; i < array.length; i++) {
-//         currentSum += array[i];
-//         if (currentSum < 0) currentSum = 0;
-//         maxSum = Math.max(maxSum, currentSum);
-//     }
-//     process.stdout.write("Max sum of an array :- " + maxSum);
-// }
-// KadansAlgorithm(unsortedArray);          // need to remember the Theory again
-
-// Trapping of rainwater
-// const trappedRainWater = (array: number[]): void => {
-//     printArray(array); console.log();
-//     // calculate the left max boundry for this we need to make the auxiliary array
-//     const leftMaxBoundryArray: number[] = new Array(array.length);
-//     leftMaxBoundryArray[0] = array[0];
-//     for (let i: number = 1; i <= array.length - 1; i++) {                          // also remember about the loop from where it should start for which array
-//         leftMaxBoundryArray[i] = Math.max(array[i], leftMaxBoundryArray[i - 1]);             // always remember how to calculate the left boundry
-//     }
-//     printArray(leftMaxBoundryArray);
-//     console.log();
-//     // calculate the right max boundry
-//     const rightMaxBoundryArray: number[] = new Array(array.length);
-//     rightMaxBoundryArray[array.length - 1] = array[array.length - 1];
-//     for (let i: number = array.length - 2; i >= 0; i--) {
-//         rightMaxBoundryArray[i] = Math.max(array[i], rightMaxBoundryArray[i + 1]);
-//     }
-//     printArray(rightMaxBoundryArray);
-//     console.log();
-//     let trappedWater: number = 0;
-//     // now compare those and use the formaula       ==> ( Water height - bar height ) * bar width
-//     for (let i: number = 0; i < array.length; i++) {
-//         trappedWater += ((Math.min(leftMaxBoundryArray[i], rightMaxBoundryArray[i])) - array[i]) * 1;        // always subtract the bar height from water height
-//     }
-//     process.stdout.write("Here is the total rain water trapped :- " + trappedWater);
-// }
-// trappedRainWater([4, 2, 0, 6, 3, 2, 5]);
-
-// perfect time to sell and buy stocks
-// const buySellStocks = (array: number[]): void => {
-//     let buyPrice: number = array[0]; let maxProfit: number = 0;
-//     for (let i: number = 1; i < array.length; i++) {
-//         buyPrice = Math.min(buyPrice, array[i]);
-//         const profit: number = array[i] - buyPrice;
-//         maxProfit = Math.max(maxProfit, profit);
-//     }
-//     process.stdout.write("Max profit till now :- " + maxProfit);
-// }
-// buySellStocks([7, 1, 5, 3, 6, 4]);
-
-// print the spiral matrix
-// const printSpiral = (array: number[][]): void => {
-//     let startRow: number = 0; let endRow: number = array.length - 1;     // always remember about the starting and ending of
-//     let startColumn: number = 0; let endColumn: number = array[0].length - 1;        // rows and columns
-//     while (startRow <= endRow && startColumn <= endColumn) {
-//         for (let i: number = startColumn; i < endColumn; i++) {
-//             process.stdout.write(array[startRow][i] + " ");
-//         }
-//         for (let j: number = startRow; j <= endRow; j++) {
-//             process.stdout.write(array[j][endColumn] + " ");
-//         }
-//         for (let i: number = endColumn - 1; i >= startColumn; i--) {
-//             process.stdout.write(array[endRow][i] + " ");
-//         }
-//         for (let j: number = endRow - 1; j > startRow; j--) {
-//             process.stdout.write(array[j][startColumn] + " ");
-//         }
-//         startRow++; startColumn++; endRow--; endColumn--;
-//     }
-// }
-// printSpiral([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]);
-
-// print Diagonal sum
-// const printDiagonalSum = (array: number[][]): void => {
-//     let diagonalSum: number = 0;
-//     for (let i: number = 0; i < array.length; i++) {
-//         diagonalSum += array[i][i] + array[i][array.length - 1 - i];            // always remember the most optimized way to achieve this
-//     }
-//     process.stdout.write("Diagonal Sum of this array :- " + diagonalSum);
-// }
-// printDiagonalSum([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]);
-
-// stair case search
-// const stairCaseSearch = (array: number[][], key: number): string => {
-//     let row: number = 0; let column: number = array.length - 1;
-//     while (row <= array.length - 1 && column >= 0) {                          // in this the main thing is to remember about the LOOP from where it should
-//         if (key == array[row][column]) {                                  // start for the row and end for the columns
-//             return `Key is present at ${row},${column}`;
-//         }
-//         else if (key > array[row][column]) row++;
-//         else column--;
-//     }
-//     return "Key is not present in this matrix";
-// }
-// console.log(stairCaseSearch([[10, 20, 30, 40], [15, 25, 35, 45], [27, 29, 37, 48], [32, 33, 39, 50]], 51));
-
-// check if the string is palindrome or not
-// const checkPalindromeString = (str: string): boolean => {
-//     for (let i: number = 0; i < str.length; i++) {
-//         if (str.charAt(i) != str.charAt(str.length - 1 - i)) return false;
-//     }
-//     return true;
-// }
-// console.log(checkPalindromeString("racecar") ? "It's Palindrome" : "Not a palindrome");
-
-// find the shortest path to reach at the given direction
-// const shortestPath = (str: string): void => {
-//     str.toUpperCase();
-//     let x1: number = 0, x2: number = 0, y1: number = 0, y2: number = 0
-//     for (let i: number = 0; i < str.length; i++) {
-//         if (str.charAt(i) == "N") y2++;
-//         else if (str.charAt(i) == "S") y2--;
-//         else if (str.charAt(i) == "E") x2++;
-//         else x2--;
-//     }
-//     process.stdout.write("Here is the shortest path of given string :- " + Math.floor(Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2))));
-// }
-// shortestPath("WNEENESENNNEEENNN")
-
-// print the largest string by Lexicographic order
-// const largestStringByLexicographicOrder = (array: string[]): void => {
-//     let largestString: string = array[0];
-//     for (let i: number = 1; i < array.length - 1; i++) {
-//         if (largestString.localeCompare(array[i]) < 0) largestString = array[i];
-//     }
-//     process.stdout.write(largestString);
-// }
-// largestStringByLexicographicOrder(["apple", "mango", "banana"]); // neeed to remember the name of the function
-
-// Convert each letter into uppercase
-// const convertToUpperCase = (str: string): void => {
-//     let responseString = str.charAt(0).toUpperCase();
-//     for (let i: number = 1; i < str.length; i++) {
-//         if (str.charAt(i) == " " && i < str.length) {
-//             responseString += str.charAt(i);
-//             responseString += str.charAt(i + 1).toUpperCase();  // remember to include the space as well in the original string
-//             i++;
-//         }
-//         else { responseString += str.charAt(i); }       // rememeber to skip the i++ in else block
-//     }
-//     console.log(responseString);
-// }
-// convertToUpperCase("hi, my name is naman sharma and i am the best  ");
-
-// string compression
-// const stringCompression1 = (str: string): void => {
-//     let newString: string = "";
-//     for (let i: number = 0; i < str.length; i++) {
-//         let count: number = 1;
-//         while (str.charAt(i) == str.charAt(i + 1) && i < str.length - 1) { count++; i++; }  // always remember the condition
-//         newString += str.charAt(i);
-//         if (count > 1) newString += count;     // also remember to append the count only in string if it is greater that 1
-//     }
-//     console.log(newString);
-// }
-// stringCompression1("aaaabbbccdddd");
-
-// Algorithms :- Bubble Sort with worst case TC :- O(n^2) and best case time complexity TC :- O(log(n))
-// const bubbleSort = (array: number[]): void => {
-//     for (let i: number = 0; i < array.length; i++) {
-//         let isSwap: boolean = false;
-//         for (let j: number = i + 1; j < array.length; j++) {
-//             if (array[i] > array[j]) {
-//                 const temp = array[i];
-//                 array[i] = array[j];
-//                 array[j] = temp;
-//                 isSwap = true
-//             }
-//         }
-//         if (isSwap == false) {
-//             break;
-//         }
-//     }
-// }
-// bubbleSort(unsortedArrayy);
-
-// Seletion sort :- Idea --> From the unsorted array we need to pick the smallest and move it or in front of the array. Also, in this we will not do swap in the inner loop to avoid
-// unnecessay swaps
-// const selectionSort = (array: number[]): void => {
-//     for (let i: number = 0; i < array.length; i++) {
-//         let smallest: number = i;
-//         for (let j: number = i + 1; j < array.length; j++) {
-//             if (array[j] < array[smallest]) {
-//                 smallest = j;
-//             }
-//         }
-//         const temp = array[i];
-//         array[i] = array[smallest];
-//         array[smallest] = temp;
-//     }
-// }
-// selectionSort(unsortedArrayy);
-
-// Insertion sort :- Idea --> Assume the first element of an array is sorted array and from the remaining array we will pick the first element then backtrack it to sorted array at its
-// appropiate position
-// const insertionSort = (array: number[]): void => {
-//     for (let i: number = 1; i < array.length; i++) {
-//         let temp: number = array[i];
-//         let j: number = i - 1;
-//         while (j >= 0 && array[j] > temp) {
-//             array[j + 1] = array[j];
-//             j--;
-//         }
-//         array[j + 1] = temp;
-//     }
-// }
-// const unsortedArrayy: number[] = [4, 2, 5, 6, 1, 9, 3];
-// insertionSort(unsortedArrayy);
-// printArray(unsortedArrayy);

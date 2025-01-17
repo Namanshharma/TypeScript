@@ -73,36 +73,36 @@ namespace Algorithms {
 
     // Merge sort :- In this, we will Divide the problem into smaller chunks until they become a single equivalent to single element and then we will arrange them or sort them
     // then put them into new array 
-    const mergeSort = (array: number[], startingIndex: number, endingIndex: number): void => {
-        if (startingIndex >= endingIndex) return;
+    // const mergeSort = (array: number[], startingIndex: number, endingIndex: number): void => {
+    //     if (startingIndex >= endingIndex) return;
 
-        const mid: number = Math.floor(startingIndex + ((endingIndex - startingIndex) / 2));
-        mergeSort(array, startingIndex, mid);                                           // recursively work on the left portion of array
-        mergeSort(array, mid + 1, endingIndex);                                         // recursively work on the right portion of array
+    //     const mid: number = Math.floor(startingIndex + ((endingIndex - startingIndex) / 2));
+    //     mergeSort(array, startingIndex, mid);                                           // recursively work on the left portion of array
+    //     mergeSort(array, mid + 1, endingIndex);                                         // recursively work on the right portion of array
 
-        merge(array, startingIndex, mid, endingIndex);
-    }
-    const merge = (array: number[], startingIndex: number, mid: number, endingIndex: number): void => {
-        // create a new temp array
-        const newArray: number[] = new Array(endingIndex - startingIndex + 1);
-        let i: number = startingIndex;                                                  // iterator for left sorted part 
-        let j: number = mid + 1;                                                        // iterator for right sorted part
-        let k: number = 0;                                                              // iterator for temp array
+    //     merge(array, startingIndex, mid, endingIndex);
+    // }
+    // const merge = (array: number[], startingIndex: number, mid: number, endingIndex: number): void => {
+    //     // create a new temp array
+    //     const newArray: number[] = new Array(endingIndex - startingIndex + 1);
+    //     let i: number = startingIndex;                                                  // iterator for left sorted part 
+    //     let j: number = mid + 1;                                                        // iterator for right sorted part
+    //     let k: number = 0;                                                              // iterator for temp array
 
-        while (i <= mid && j <= endingIndex) {
-            if (array[i] < array[j]) { newArray[k] = array[i]; i++; }
-            else { newArray[k] = array[j]; j++; }
-            k++;
-        }
-        while (i <= mid) { newArray[k++] = array[i++]; }                // here if any of the element is remaining from the left sorted array then those elements into new Array
-        while (j <= endingIndex) { newArray[k++] = array[j++]; }        // here if any of the element is remaining from the right sorted array then put those elements into new array 
+    //     while (i <= mid && j <= endingIndex) {
+    //         if (array[i] < array[j]) { newArray[k] = array[i]; i++; }
+    //         else { newArray[k] = array[j]; j++; }
+    //         k++;
+    //     }
+    //     while (i <= mid) { newArray[k++] = array[i++]; }                // here if any of the element is remaining from the left sorted array then those elements into new Array
+    //     while (j <= endingIndex) { newArray[k++] = array[j++]; }        // here if any of the element is remaining from the right sorted array then put those elements into new array 
 
-        // now we need to add the new Array into our original array
-        for (k = 0, i = startingIndex; k < newArray.length; i++, k++) {
-            array[i] = newArray[k];
-        }
-    }
-    const unsortedArray: number[] = [5, 7, 2, 6, 12, 3, 20, 32, 1];
-    mergeSort(unsortedArray, 0, unsortedArray.length - 1);
-    printArrayAgain(unsortedArray);
+    //     // now we need to add the new Array into our original array
+    //     for (k = 0, i = startingIndex; k < newArray.length; i++, k++) {
+    //         array[i] = newArray[k];
+    //     }
+    // }
+    // const unsortedArray: number[] = [5, 7, 2, 6, 12, 3, 20, 32, 1];      // TC :- O(n log(n)) and SC :- O(n)
+    // mergeSort(unsortedArray, 0, unsortedArray.length - 1);               // we can say this is the Depth first technique
+    // printArrayAgain(unsortedArray);                                      
 }
