@@ -836,5 +836,18 @@ namespace Practice {
     //     printSubSet(str, i + 1, newString + str.charAt(i));      // in this we have 2 choices one is to add the character into our new string
     //     printSubSet(str, i + 1, newString + "");                 // 2nd choice is not to add that chara into our new string
     // }
-    // printSubSet("asg", 0, "");
-}
+    // printSubSet("asg", 0, "");                                   // TC :- O ( 2^n * n )
+
+    // find and print all the permutations of string
+    // const printAllPermutations = (str: string, newString: string): void => {
+    //     if (str.length == 0) {
+    //         process.stdout.write(newString + "\n");
+    //     }
+    //     for (let i: number = 0; i < str.length; i++) {
+    //         let currentChar = str.charAt(i);
+    //         let x: string = str.substring(0, i) + str.substring(i + 1);         // here we have remove the ith character from string so that we can print asdf, adfs, afds etc
+    //         printAllPermutations(x, newString + currentChar);
+    //     }
+    // }
+    // printAllPermutations("asd", "");                        // TC :- O(n * n!)
+}   
