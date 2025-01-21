@@ -456,14 +456,6 @@ namespace PracticeSprint2 {
     // printReverse(unsortedArray);
     // printArray(unsortedArray);
 
-    const printArray = (array: number[]): void => {
-        for (let i: number = 0; i < array.length; i++) {
-            process.stdout.write(array[i] + " ");
-        }
-    }
-    const sortedArr: number[] = [2, 4, 5, 6, 8, 10, 12, 15, 18, 21, 22];
-    const unsortedArray: number[] = [23, 434, 2342, 5, 24, 33, 5, 6456, 34, 64, 5, 23, 23, 545, 87, 976, 678, 6756];
-
     // const printThePairs = (array: number[]): void => {
     //     for (let i: number = 0; i < array.length; i++) {
     //         for (let j = i + 1; j < array.length; j++) {
@@ -493,10 +485,30 @@ namespace PracticeSprint2 {
     // }
     // printSubArray(sortedArr);
 
-    const KadansAlgorithm = (array: number[]): void => {
+    const printArray = (array: number[]): void => {
         for (let i: number = 0; i < array.length; i++) {
-
+            process.stdout.write(array[i] + " ");
         }
     }
-    KadansAlgorithm([3, 5, -2, 4, -7, 9, 1]);
+    const sortedArr: number[] = [2, 4, 5, 6, 8, 10, 12, 15, 18, 21, 22];
+    const unsortedArray: number[] = [23, 434, 2342, 5, 24, 33, 5, 6456, 34, 64, 5, 23, 23, 545, 87, 976, 678, 6756];
+
+    // const KadansAlgorithm = (array: number[]): void => {
+    //     let currentSum: number = 0; let kadanSum: number = 0;
+    //     for (let i: number = 0; i < array.length; i++) {
+    //         currentSum += array[i];
+    //         if (currentSum > 0)
+    //             kadanSum = Math.max(kadanSum, currentSum);
+    //         else
+    //             currentSum = 0;
+    //     }
+    //     process.stdout.write("Max sum from Kadan's Algorithm :- " + kadanSum);
+    // }
+    // KadansAlgorithm([5, -3, 5]);
+
+    // spiral matrix
+    const printSpiral = (array: number[][]): void => {
+
+    }
+    printSpiral([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15], [16, 17, 18, 19, 20]]);
 }
