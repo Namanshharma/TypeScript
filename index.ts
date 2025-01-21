@@ -531,5 +531,37 @@ namespace PracticeSprint2 {
     // }
     // printSpiral([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]);
 
-    
+    // const diagonalSum = (array: number[][]): void => {
+    //     let diagonalSum: number = 0;
+    //     for (let i: number = 0; i < array.length; i++) {
+    //         diagonalSum += array[i][i];
+    //         if (i != array.length - i - 1) {
+    //             diagonalSum += array[i][array.length - i - 1];
+    //         }
+    //     }
+    //     process.stdout.write(diagonalSum + " ");
+    // }
+    // diagonalSum([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15], [16, 17, 18, 19, 20], [21, 22, 23, 24, 25]]);
+
+    // const stairCaseSearch = (array: number[][], key: number): void => {
+    //     let row: number = 0; let column: number = array[0].length - 1;
+    //     while (row < array.length && column >= 0) {
+    //         if (array[row][column] == key) {
+    //             process.stdout.write("Key is present at :- " + row + "," + column);
+    //             return;
+    //         } else if (key > array[row][column]) {
+    //             column--
+    //         } else {
+    //             row++;
+    //         }
+    //     }
+    //     process.stdout.write("Key is not present in the matrix");
+    // }
+    // stairCaseSearch([[10, 20, 30, 40], [15, 25, 35, 45], [27, 29, 37, 48], [32, 33, 39, 50]], 25);
+    // stairCaseSearch([
+    //     [16, 15, 14, 13],
+    //     [12, 11, 10, 9],
+    //     [8, 7, 6, 5],
+    //     [4, 3, 2, 1]
+    // ], 6);
 }
