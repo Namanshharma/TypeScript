@@ -455,4 +455,48 @@ namespace PracticeSprint2 {
     // }
     // printReverse(unsortedArray);
     // printArray(unsortedArray);
+
+    const printArray = (array: number[]): void => {
+        for (let i: number = 0; i < array.length; i++) {
+            process.stdout.write(array[i] + " ");
+        }
+    }
+    const sortedArr: number[] = [2, 4, 5, 6, 8, 10, 12, 15, 18, 21, 22];
+    const unsortedArray: number[] = [23, 434, 2342, 5, 24, 33, 5, 6456, 34, 64, 5, 23, 23, 545, 87, 976, 678, 6756];
+
+    // const printThePairs = (array: number[]): void => {
+    //     for (let i: number = 0; i < array.length; i++) {
+    //         for (let j = i + 1; j < array.length; j++) {
+    //             process.stdout.write(array[i] + "," + array[j] + "\t")
+    //         }
+    //         console.log();
+    //     }
+    // }
+    // printThePairs(sortedArr);
+
+    // const printSubArray = (array: number[]): void => {
+    //     let maxSum: number = 0;
+    //     for (let i: number = 0; i < array.length; i++) {
+    //         for (let j: number = i + 1; j < array.length; j++) {
+    //             let sum: number = 0;
+    //             for (let k: number = i; k <= j; k++) {
+    //                 process.stdout.write(array[k] + " ")
+    //                 sum += array[k];
+    //             }
+    //             process.stdout.write("\t" + sum);
+    //             process.stdout.write("\n");
+    //             maxSum = Math.max(maxSum, sum);
+    //         }
+    //         process.stdout.write("\n");
+    //     }
+    //     process.stdout.write("Max sum of sub array is :- " + maxSum);
+    // }
+    // printSubArray(sortedArr);
+
+    const KadansAlgorithm = (array: number[]): void => {
+        for (let i: number = 0; i < array.length; i++) {
+
+        }
+    }
+    KadansAlgorithm([3, 5, -2, 4, -7, 9, 1]);
 }
