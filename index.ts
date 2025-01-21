@@ -507,8 +507,29 @@ namespace PracticeSprint2 {
     // KadansAlgorithm([5, -3, 5]);
 
     // spiral matrix
-    const printSpiral = (array: number[][]): void => {
+    // const printSpiral = (array: number[][]): void => {
+    //     let startRow: number = 0; let endRow: number = array.length - 1; let startColumn: number = 0; let endColumn: number = array[0].length - 1;
+    //     while (startRow <= endRow && startColumn <= endColumn) {
+    //         for (let i: number = startColumn; i < endColumn; i++) {
+    //             process.stdout.write(array[startRow][i] + " ");
+    //         }
+    //         for (let j: number = startRow; j <= endRow; j++) {
+    //             process.stdout.write(array[j][endColumn] + " ");
+    //         }
+    //         if (startRow != endRow) {
+    //             for (let i: number = endColumn - 1; i >= startColumn; i--) {
+    //                 process.stdout.write(array[endRow][i] + " ");
+    //             }
+    //         }
+    //         if (startColumn != endColumn) {
+    //             for (let j: number = endRow - 1; j > startRow; j--) {
+    //                 process.stdout.write(array[j][startColumn] + " ");
+    //             }
+    //         }
+    //         startRow++; endRow--; startColumn++; endColumn--;
+    //     }
+    // }
+    // printSpiral([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]);
 
-    }
-    printSpiral([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15], [16, 17, 18, 19, 20]]);
+    
 }
