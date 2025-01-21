@@ -161,13 +161,7 @@ namespace PracticeSprint2 {
     //         array[array.length - i - 1] = temp;
     //     }
     // }
-    const printArray = (array: number[]): void => {
-        for (let i: number = 0; i < array.length; i++) {
-            process.stdout.write(array[i] + " ");
-        }
-    }
-    const sortedArr: number[] = [2, 4, 5, 6, 8, 10, 12, 15, 18, 21, 22];
-    const unsortedArray: number[] = [23, 434, 2342, 5, 24, 33, 5, 6456, 34, 64, 5, 23, 23, 545, 87, 976, 678, 6756];
+
     // printReverse(unsortedArray);
     // printArray(unsortedArray);
 
@@ -382,4 +376,83 @@ namespace PracticeSprint2 {
     // const unsortedArrayy: number[] = [4, 2, 5, 6, 1, 9, 3];
     // insertionSort(unsortedArrayy);
     // printArray(unsortedArrayy);
+
+
+    // ----------------------------------------------------------------------------- Practice sprint 3 ----------------------------------------------------------------------------------
+    // print from 1-10
+    // for (let i: number = 0; i <= 10; i++) { process.stdout.write(i + " "); }
+
+    // print the sum of first N natural numbers
+    // let sum: number = 0;
+    // for (let i: number = 0; i <= 10; i++) {
+    //     sum += i;
+    // }
+    // process.stdout.write(sum + "");
+
+    // print the reverse of given number
+    // let n: number = 684351315;
+    // while (n > 0) {
+    //     let lastDigit: number = n % 10;
+    //     process.stdout.write(lastDigit + "");
+    //     n = Math.floor(n / 10);
+    // }
+
+    // print the reverse of original number
+    // let n: number = 763257; let finalNumber: number = 0;
+    // while (n > 0) {
+    //     let lastDigit: number = n % 10;
+    //     finalNumber = lastDigit + (finalNumber * 10);
+    //     n = Math.floor(n / 10);
+    // }
+    // process.stdout.write(finalNumber+"");
+
+    // check if the number is prime or not
+    // const checkPrime = (n: number): boolean => {
+    //     if (n == 1 || n == 2) return true;
+    //     let isPrime: boolean = true;
+    //     for (let i: number = 2; i <= Math.sqrt(n); i++) {
+    //         if (n % i == 0) {
+    //             return false;
+    //         }
+    //     }
+    //     return isPrime;
+    // }
+    // console.log(checkPrime(9));
+
+    // print right angle triangle
+    // let n: number = 5;
+    // for (let i: number = 0; i <= n; i++) {
+    //     for (let j: number = 0; j <= i; j++) {
+    //         process.stdout.write("*");
+    //     }
+    //     console.log();
+    // }
+
+    // Binary search
+    // const binarySearch = (array: number[], key: number): number => {
+    //     let start: number = 0; let end: number = array.length;
+    //     while (start <= end) {
+    //         let mid: number = Math.floor(start + ((end - start) / 2));
+    //         if (array[mid] == key) {
+    //             return mid;
+    //         } else if (key > array[mid]) {
+    //             start = mid + 1;
+    //         } else {
+    //             end = mid - 1;
+    //         }
+    //     }
+    //     return -1;
+    // }
+    // console.log(binarySearch(sortedArr, 35));
+
+    // print the reverse of an array
+    // const printReverse = (array: number[]): void => {
+    //     for (let i: number = 0; i <= Math.floor(array.length / 2); i++) {
+    //         let temp: number = array[i];
+    //         array[i] = array[array.length - i - 1];
+    //         array[array.length - i - 1] = temp;
+    //     }
+    // }
+    // printReverse(unsortedArray);
+    // printArray(unsortedArray);
 }
