@@ -564,4 +564,62 @@ namespace PracticeSprint2 {
     //     [8, 7, 6, 5],
     //     [4, 3, 2, 1]
     // ], 6);
+
+    // const checkIfStringIsPalindrome = (str: string): boolean => {
+    //     for (let i: number = 0; i < Math.floor(str.length / 2); i++) {
+    //         if (str.charAt(i) != str.charAt(str.length - 1 - i)) {
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    // }
+    // console.log(checkIfStringIsPalindrome("arr"));
+
+    // const checkIfStringIsAnagram = (str1: string, str2: string): boolean => {
+    //     if (str1.split("").sort().join("") != str2.split("").sort().join("")) {
+    //         return false;
+    //     }
+    //     return true;
+    // }
+    // console.log(checkIfStringIsAnagram("asdfasdf", "fasdfasd"));
+
+    // const findTheShortestPath = (str: string): void => {
+    //     let x2: number = 0; let y2: number = 0;
+    //     for (let i: number = 0; i < str.length; i++) {
+    //         if (str.charAt(i) == "N") { y2++; }
+    //         else if (str.charAt(i) == "S") { y2--; }
+    //         else if (str.charAt(i) == "E") { x2++; }
+    //         else { x2--; }
+    //     }
+    //     process.stdout.write(Math.floor(Math.sqrt(Math.pow(x2, 2) + Math.pow(y2, 2))) + " ");
+    // }
+    // findTheShortestPath("SSWWNNNEEEESSEEWWNNN");
+
+    // const printLargestStringInLexicographicOrder = (array: string[]): void => {
+    //     let largetString: string = array[0];
+    //     for (let i: number = 1; i < array.length; i++) {
+    //         if (largetString.localeCompare(array[i]) < 0) {                         // rememeber tha Local compare method always gives comparision from 0
+    //             largetString = array[i];
+    //         }
+    //     }
+    //     process.stdout.write(largetString);
+    // }
+    // printLargestStringInLexicographicOrder(["asdfasdfas", "namansharma", "isbestinWorld"]);
+
+    // const convertFirstLetterToUpperCase = (str: string): void => {
+    //     let newString: string = ""; newString += str.charAt(0).toUpperCase();
+    //     for (let i: number = 1; i < str.length; i++) {
+    //         if (str.charAt(i) == " ") {
+    //             newString += str.charAt(i);
+    //             newString += str.charAt(i + 1).toUpperCase();
+    //             i++;
+    //         } else {
+    //             newString += str.charAt(i);
+    //         }
+    //     }
+    //     process.stdout.write(newString);
+    // }
+    // convertFirstLetterToUpperCase("i am best in the world!");
+
+    
 }
