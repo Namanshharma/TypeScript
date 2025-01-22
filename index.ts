@@ -621,20 +621,35 @@ namespace PracticeSprint2 {
     // }
     // convertFirstLetterToUpperCase("i am best in the world!");
 
-    const stringCompression = (str: string): void => {
-        let newString: string = "";
-        for (let i: number = 0; i < str.length; i++) {
-            let count: number = 1;
-            while (str.charAt(i) == str.charAt(i + 1) && i < str.length) {
-                count++;
-                i++;
-            }
-            newString += str.charAt(i);
-            if (count > 1) {
-                newString += count;
-            }
-        }
-        process.stdout.write(newString);
-    }
-    stringCompression("aaaaaaassssssddddddggggg");
+    // const stringCompression = (str: string): void => {
+    //     let newString: string = "";
+    //     for (let i: number = 0; i < str.length; i++) {
+    //         let count: number = 1;
+    //         while (str.charAt(i) == str.charAt(i + 1) && i < str.length) {
+    //             count++;
+    //             i++;
+    //         }
+    //         newString += str.charAt(i);
+    //         if (count > 1) {
+    //             newString += count;
+    //         }
+    //     }
+    //     process.stdout.write(newString);
+    // }
+    // stringCompression("aaaaaaassssssddddddggggg");
+
+    // -------------------------------------------------------------------------- Recurssion ------------------------------------------------------------------------------------
+    // const printDecreasingOrder = (n: number): void => {
+    //     if (n == 0) return;
+    //     process.stdout.write(n + " ");
+    //     printDecreasingOrder(n - 1);
+    // }
+    // printDecreasingOrder(10);
+
+    // const printIncreasingOrder = (n: number): void => {
+    //     if (n == 0) return;
+    //     printIncreasingOrder(n - 1);
+    //     process.stdout.write(n + " ");
+    // }
+    // printIncreasingOrder(10);
 }
