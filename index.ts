@@ -652,4 +652,27 @@ namespace PracticeSprint2 {
     //     process.stdout.write(n + " ");
     // }
     // printIncreasingOrder(10);
+
+    // const printFactorial = (n: number): number => {
+    //     if (n == 0) return 1;
+    //     return n * printFactorial(n - 1);
+    // }
+    // console.log(printFactorial(5));
+
+    // const printSumOfFirstNNaturalNumbers = (n: number): number => {
+    //     if (n == 0) return 0;
+    //     return n + printSumOfFirstNNaturalNumbers(n - 1);
+    // }
+    // console.log(printSumOfFirstNNaturalNumbers(50));
+
+    // const printNthFibonacciNumber = (n: number): number => {
+    //     if (n == 1 || n == 0) return n;
+    //     return printNthFibonacciNumber(n - 1) + printNthFibonacciNumber(n - 2);
+    // }
+    // console.log(printNthFibonacciNumber(7));
+
+    const printFibonacciSeriesTillNthNumber = (n: number): number => {
+        if (n == 0 || n == 1) return n;
+        
+    }
 }
