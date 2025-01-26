@@ -701,8 +701,80 @@ namespace PracticeSprint2 {
     // }
     // trappedRainWater([4, 2, 0, 6, 3, 2, 5]);
 
-    const buySellStocks = (array: number[]): void => {
+    // const buySellStocks = (array: number[]): void => {
+    //     let buyPrice: number = 0; let maxProfit: number = 0;
+    //     buyPrice = array[0];
+    //     for (let i: number = 1; i < array.length; i++) {
+    //         if (buyPrice > array[i]) { buyPrice = array[i]; }
+    //         maxProfit = Math.max(maxProfit, array[i] - buyPrice);
+    //     }
+    //     process.stdout.write(maxProfit + "");
+    // }
+    // buySellStocks([7, 1, 5, 3, 6, 4]);
 
-    }
-    buySellStocks([7, 1, 5, 3, 6, 4]);
+    // const spiralMatrix = (array: number[][]): void => {
+    //     let rowStart: number = 0; let rowEnd: number = array.length; let columnStart: number = 0; let columnEnd: number = array[0].length;
+    //     while (rowStart <= rowEnd && columnStart <= columnEnd) {
+
+    //         for (let i: number = columnStart; i < columnEnd; i++) {
+    //             process.stdout.write(array[rowStart][i] + " ");
+    //         }
+    //         for (let i: number = rowStart + 1; i < rowEnd; i++) {
+    //             process.stdout.write(array[i][columnEnd - 1] + " ");
+    //         }
+
+    //         if (rowStart != rowEnd) {                                            // need to check these 2 conditions again
+    //             for (let i: number = columnEnd - 2; i >= columnStart; i--) {
+    //                 process.stdout.write(array[rowEnd - 1][i] + " ");
+    //             }
+    //         }
+    //         if (columnStart != columnEnd) {                                      // need to check these 2 conditions again
+    //             for (let i: number = rowEnd - 2; i > rowStart; i--) {
+    //                 process.stdout.write(array[i][columnStart] + " ");
+    //             }
+    //         }
+    //         rowStart++; rowEnd--; columnStart++; columnEnd--;
+    //     }
+    // }
+    // spiralMatrix([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15], [16, 17, 18, 19, 20], [21, 22, 23, 24, 25]]);
+
+    // const diagonalSum = (array: number[][]): void => {
+    //     let diagonalSum: number = 0;
+    //     for (let i: number = 0; i < array.length; i++) {
+    //         diagonalSum += array[i][i];
+    //         if (i != array.length - 1 - i) {
+    //             diagonalSum += array[i][array.length - 1 - i];
+    //         }
+    //     }
+    //     process.stdout.write(diagonalSum + " ");
+    // }
+    // diagonalSum([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
+
+    // const stairCaseSearch = (array: number[][], key: number): void => {
+    //     let row: number = array.length - 1; let column: number = 0;
+    //     while (column < array[0].length && row >= 0) {
+    //         if (key == array[row][column]) {
+    //             process.stdout.write("Key is present at :- " + row + "," + column);
+    //             return;
+    //         } else if (key > array[row][column]) {
+    //             column++;
+    //         } else {
+    //             row--;
+    //         }
+    //     }
+    //     process.stdout.write("-1");
+    // }
+    // stairCaseSearch([[10, 20, 30, 40], [15, 25, 35, 45], [27, 29, 37, 48], [32, 33, 39, 50]], 48);
+
+    // const checkIfStringIsPalindrome = (str: string): void => {
+    //     for (let i: number = 0; i <= Math.floor(str.length / 2); i++) {
+    //         if (str.charAt(i) != str.charAt(str.length - 1 - i)) {
+    //             process.stdout.write("false"); return;
+    //         }
+    //     }
+    //     process.stdout.write("true");
+    // }
+    // checkIfStringIsPalindrome("madam");
+
+    
 }
