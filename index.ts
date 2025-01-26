@@ -818,8 +818,85 @@ namespace PracticeSprint2 {
     // }
     // convertFirstLetterToUpperCase("         my name is naman         and i am           the best!        ");
 
-    const stringCompression = (str: string): void => {
+    // const stringCompression = (str: string): void => {
+    //     let newString: string = "";
+    //     for (let i: number = 0; i < str.length; i++) {
+    //         let count: number = 1;
+    //         while (str.charAt(i) == str.charAt(i + 1) && i < str.length) {
+    //             count++; i++;
+    //         }
+    //         newString += str.charAt(i);
+    //         if (count > 1) newString += count;
+    //     }
+    //     process.stdout.write(newString);
+    // }
+    // stringCompression("aaaabbbbbccccccdddddddddttttttt");
 
-    }
-    stringCompression("aaaabbbbbccccccdddddddddttttttt");
+    // const printDecreasingOrder = (n: number): void => {
+    //     if (n == 0) {
+    //         process.stdout.write(n + " ");
+    //         return;
+    //     }
+    //     process.stdout.write(n + " ");
+    //     printDecreasingOrder(n - 1);
+    // }
+    // printDecreasingOrder(10);
+
+    // const printIncreasingOrder = (n: number): void => {
+    //     if (n == 0) {
+    //         process.stdout.write(n + " ");
+    //         return;
+    //     }
+    //     printIncreasingOrder(n - 1);
+    //     process.stdout.write(n + " ");
+    // }
+    // printIncreasingOrder(10);
+
+    // const printFactorial = (n: number): number => {
+    //     if (n == 0) return 1;
+    //     return n * printFactorial(n - 1);
+    // }
+    // console.log(printFactorial(5));
+
+    // const printSumOfFirstNNaturalNumbers = (n: number): number => {
+    //     if (n == 0) return 0;
+    //     return n + printSumOfFirstNNaturalNumbers(n - 1);
+    // }
+    // console.log(printSumOfFirstNNaturalNumbers(5));
+
+    // const printNthFibonacciNumber = (n: number): number => {
+    //     if (n == 0 || n == 1) return n;
+    //     return printNthFibonacciNumber(n - 1) + printNthFibonacciNumber(n - 2);
+    // }
+    // console.log(printNthFibonacciNumber(26));
+
+    // const printIfArrayIsSorted = (array: number[], i: number): void => {
+    //     if (i == array.length) {
+    //         process.stdout.write("Sorted");
+    //         return;
+    //     }
+    //     if (array[i] > array[i + 1]) {
+    //         process.stdout.write("Not sorted");
+    //         return;
+    //     }
+    //     printIfArrayIsSorted(array, i + 1);
+    // }
+    // (printIfArrayIsSorted([2, 4, 6, 8, 11, 23, 63, 3], 0));
+
+    // const firstOccurance = (array: number[], key: number, i: number): void => {
+    //     if (i == array.length) { process.stdout.write("Not present"); return; }
+    //     if (key == array[i]) { process.stdout.write("Key is present at :- " + i); return; }
+    //     firstOccurance(array, key, i + 1);
+    // }
+    // firstOccurance([4, 2, 52, 6, 90, 66, 22, 11, 76, 74], 69, 0);
+
+    // const lastOccurance = (array: number[], key: number, i: number): number => {
+    //     if (i == array.length) return -1;
+    //     let isFound = lastOccurance(array, key, i + 1);
+    //     if (key == array[i] && isFound == -1) { return i; }
+    //     return isFound;
+    // }
+    // console.log(lastOccurance([4, 2, 52, 6, 90, 66, 22, 11, 74, 74, 90], 99, 0));
+
+    
 }
