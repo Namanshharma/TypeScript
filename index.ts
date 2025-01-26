@@ -776,5 +776,50 @@ namespace PracticeSprint2 {
     // }
     // checkIfStringIsPalindrome("madam");
 
-    
+    // const shortestPath = (str: string): void => {
+    //     let x: number = 0; let y: number = 0;
+    //     for (let i: number = 0; i < str.length; i++) {
+    //         if (str.charAt(i) == "N") y++;
+    //         else if (str.charAt(i) == "S") y--;
+    //         else if (str.charAt(i) == "E") x++;
+    //         else x--
+    //     }
+    //     process.stdout.write("" + Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2)));
+    // }
+    // shortestPath("WNEENESENNN");
+
+    // const largestStringByLexicographicOrder = (array: string[]): void => {
+    //     let largetString: string = array[0];
+    //     for (let i: number = 1; i < array.length; i++) {
+    //         if (array[i].localeCompare(largetString) > 0) {
+    //             largetString = array[i];
+    //         }
+    //     }
+    //     process.stdout.write(largetString);
+    // }
+    // largestStringByLexicographicOrder(["apple", "mango", "banana"]);
+
+    // const convertFirstLetterToUpperCase = (str: string): void => {
+    //     let newString: string = "";
+    //     for (let i: number = 0; i < str.length; i++) {
+    //         if (str.charAt(i) == " ") {
+    //             newString += str.charAt(i);
+    //             i++;
+    //             newString += str.charAt(i).toUpperCase();
+    //         } else {
+    //             if (i == 0) {
+    //                 newString += str.charAt(i).toUpperCase();
+    //                 i++;
+    //             }
+    //             newString += str.charAt(i);
+    //         }
+    //     }
+    //     process.stdout.write(newString);
+    // }
+    // convertFirstLetterToUpperCase("         my name is naman         and i am           the best!        ");
+
+    const stringCompression = (str: string): void => {
+
+    }
+    stringCompression("aaaabbbbbccccccdddddddddttttttt");
 }
