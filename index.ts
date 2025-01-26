@@ -671,8 +671,38 @@ namespace PracticeSprint2 {
     // }
     // console.log(printNthFibonacciNumber(7));
 
-    const printFibonacciSeriesTillNthNumber = (n: number): number => {
-        if (n == 0 || n == 1) return n;
-        
+
+    // -----------------------------------------------Practice Sprint ( Arrays , Strings , Algorithms , Recurssion with understanding from Videos ) ----------------------------------
+    // const maxSumFromKadans = (array: number[]): void => {
+    //     let currentSum: number = 0; let maxSum: number = 0;
+    //     for (let i: number = 0; i < array.length; i++) {
+    //         currentSum += array[i];
+    //         currentSum < 0 ? currentSum = 0 : maxSum = Math.max(currentSum, maxSum);
+    //     }
+    //     process.stdout.write(maxSum + "");
+    // }
+    // maxSumFromKadans([-2, -3, 4, -1, -2, 1, 5, -3]);
+
+    // const trappedRainWater = (array: number[]): void => {
+    //     // create the left max boundry array
+    //     let maxLeftBoundryArray = new Array(array.length);
+    //     maxLeftBoundryArray[0] = array[0];
+    //     for (let i: number = 1; i < array.length; i++) { maxLeftBoundryArray[i] = Math.max(array[i], maxLeftBoundryArray[i - 1]); }
+
+    //     // crete the right max boundy array
+    //     process.stdout.write("\n");
+    //     let rightMaxBoundryArray = new Array(array.length);
+    //     rightMaxBoundryArray[array.length - 1] = array[array.length - 1];
+    //     for (let i: number = array.length - 2; i >= 0; i--) { rightMaxBoundryArray[i] = Math.max(array[i], rightMaxBoundryArray[i + 1]); }
+
+    //     let trappedWater: number = 0;
+    //     for (let i: number = 0; i < array.length; i++) { trappedWater += array[i] - (Math.min(maxLeftBoundryArray[i], rightMaxBoundryArray[i]) - array[i]); }
+    //     process.stdout.write(trappedWater + "");
+    // }
+    // trappedRainWater([4, 2, 0, 6, 3, 2, 5]);
+
+    const buySellStocks = (array: number[]): void => {
+
     }
+    buySellStocks([7, 1, 5, 3, 6, 4]);
 }
