@@ -898,5 +898,25 @@ namespace PracticeSprint2 {
     // }
     // console.log(lastOccurance([4, 2, 52, 6, 90, 66, 22, 11, 74, 74, 90], 99, 0));
 
-    
+    // const printXPowN = (n: number, x: number): number => {
+    //     if (n == 0) return 1;
+    //     return x * printXPowN(n - 1, x);
+    // }
+    // console.log(printXPowN(5, 2));
+
+    // const printXPowNOptimized = (n: number, x: number): number => {
+    //     if (n == 0) return 1;
+    //     let result = printXPowNOptimized(Math.floor(n / 2), x);
+    //     if (n % 2 != 0) {
+    //         return result * result * x;
+    //     }
+    //     return result * result;
+    // }
+    // console.log(printXPowNOptimized(6, 2));
+
+    // const tillingProblem = (n: number): number => {
+    //     if (n == 0 || n == 1) return 1;
+    //     return tillingProblem(n - 1) + tillingProblem(n - 2);
+    // }
+    // console.log(tillingProblem(7));
 }
