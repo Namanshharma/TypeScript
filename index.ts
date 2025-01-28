@@ -919,4 +919,23 @@ namespace PracticeSprint2 {
     //     return tillingProblem(n - 1) + tillingProblem(n - 2);
     // }
     // console.log(tillingProblem(7));
+
+    // const removeDuplicates = (str: string, array: boolean[], i: number, newString: string): void => {
+    //     if (i == str.length) {
+    //         process.stdout.write(newString);
+    //         return;
+    //     };
+    //     if (array[str.charCodeAt(i) - 'a'.charCodeAt(0)] == false) {
+    //         newString += str.charAt(i);
+    //         array[str.charCodeAt(i) - 'a'.charCodeAt(0)] = true;
+    //     }
+    //     removeDuplicates(str, array, i + 1, newString);
+    // }
+    // removeDuplicates("namanasdlkfjalksdjflaksjdflajskdlja", new Array(26).fill(false), 0, "");
+
+    // const friendsPairingProblem = (n: number): number => {
+    //     if (n == 1 || n == 2) return n;
+    //     return friendsPairingProblem(n - 1) + ((n - 1) * friendsPairingProblem(n - 2));
+    // }
+    // console.log(friendsPairingProblem(3));
 }
