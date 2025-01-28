@@ -952,4 +952,23 @@ namespace PracticeSprint2 {
     //     // binaryStringProblem(n - 1, newString + "0", 0);
     // }
     // binaryStringProblem(3, "", 1);
+
+    // const printFibonacciSeries = (a: number, b: number, n: number): void => {
+    //     if (n == 0) return;
+    //     process.stdout.write(a + b + " ");
+    //     printFibonacciSeries(b, a + b, n - 1);
+    // }
+    // process.stdout.write("0 1 ");
+    // printFibonacciSeries(0, 1, 11);         // remember we need to pass 3 parameters in the function 
+
+    const towerOfHanoi = (disc: number, source: string, helper: string, destination: string): void => {
+        if (disc == 1) {
+            process.stdout.write(`Moving ${disc}th from Source :- ${source} to Destination :- ${destination} \n`);
+            return;
+        }
+        towerOfHanoi(disc - 1, source, destination, helper);
+        process.stdout.write(`Moving ${disc}th from Source :- ${source} to Destination :- ${destination} \n`);
+        towerOfHanoi(disc - 1, helper, source, destination);
+    }
+    towerOfHanoi(5, "source", "helper", "destination");
 }
