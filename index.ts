@@ -938,4 +938,18 @@ namespace PracticeSprint2 {
     //     return friendsPairingProblem(n - 1) + ((n - 1) * friendsPairingProblem(n - 2));
     // }
     // console.log(friendsPairingProblem(3));
+
+    // const binaryStringProblem = (n: number, newString: string, lastPlace: number): void => {
+    //     if (n == 0) {
+    //         process.stdout.write(newString + "\n");
+    //         return;
+    //     }
+    //     if (lastPlace == 1)
+    //         binaryStringProblem(n - 1, newString + "0", 0);
+    //     binaryStringProblem(n - 1, newString + "1", 1);
+    //     // if (lastPlace == 0)
+    //     //     binaryStringProblem(n - 1, newString + "1", 1);
+    //     // binaryStringProblem(n - 1, newString + "0", 0);
+    // }
+    // binaryStringProblem(3, "", 1);
 }
