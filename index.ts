@@ -961,14 +961,35 @@ namespace PracticeSprint2 {
     // process.stdout.write("0 1 ");
     // printFibonacciSeries(0, 1, 11);         // remember we need to pass 3 parameters in the function 
 
-    const towerOfHanoi = (disc: number, source: string, helper: string, destination: string): void => {
-        if (disc == 1) {
-            process.stdout.write(`Moving ${disc}th from Source :- ${source} to Destination :- ${destination} \n`);
+    // const towerOfHanoi = (disc: number, source: string, helper: string, destination: string): void => {
+    //     if (disc == 1) {
+    //         process.stdout.write(`Moving ${disc}th from Source :- ${source} to Destination :- ${destination} \n`);
+    //         return;
+    //     }
+    //     towerOfHanoi(disc - 1, source, destination, helper);
+    //     process.stdout.write(`Moving ${disc}th from Source :- ${source} to Destination :- ${destination} \n`);
+    //     towerOfHanoi(disc - 1, helper, source, destination);
+    // }
+    // towerOfHanoi(5, "source", "helper", "destination");
+
+    // const printStringInReverse = (str: string, newString: string, i: number): void => {
+    //     if (i == str.length) {
+    //         process.stdout.write(newString); return;
+    //     }
+    //     printStringInReverse(str, newString += str.charAt(str.length - 1 - i), i + 1);
+    // }
+    // printStringInReverse("oaisfuoqwfjio", "", 0);
+
+    const printTheFirstAndLastOccuranceInString = (str: string, key: string, i: number, firstOccurance: number, lastOccurance: number): void => {
+        if (i == str.length) {
+            process.stdout.write("First occurance happens at :- " + firstOccurance + " and last happens at :- " + lastOccurance);
             return;
         }
-        towerOfHanoi(disc - 1, source, destination, helper);
-        process.stdout.write(`Moving ${disc}th from Source :- ${source} to Destination :- ${destination} \n`);
-        towerOfHanoi(disc - 1, helper, source, destination);
-    }
-    towerOfHanoi(5, "source", "helper", "destination");
+        if (str.charAt(i) == key) {
+            if (firstOccurance == -1) firstOccurance = i;
+            else lastOccurance = i;
+        }
+        printTheFirstAndLastOccuranceInString(str, key, i + 1, firstOccurance, lastOccurance);
+    };
+    printTheFirstAndLastOccuranceInString("asdfasdfasdgfergerughiwahiuhvlshfliwuhraefaiwh", "f", 0, -1, -1);
 }
