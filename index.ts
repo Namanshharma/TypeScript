@@ -980,16 +980,16 @@ namespace PracticeSprint2 {
     // }
     // printStringInReverse("oaisfuoqwfjio", "", 0);
 
-    const printTheFirstAndLastOccuranceInString = (str: string, key: string, i: number, firstOccurance: number, lastOccurance: number): void => {
-        if (i == str.length) {
-            process.stdout.write("First occurance happens at :- " + firstOccurance + " and last happens at :- " + lastOccurance);
-            return;
-        }
-        if (str.charAt(i) == key) {
-            if (firstOccurance == -1) firstOccurance = i;
-            else lastOccurance = i;
-        }
-        printTheFirstAndLastOccuranceInString(str, key, i + 1, firstOccurance, lastOccurance);
-    };
-    printTheFirstAndLastOccuranceInString("asdfasdfasdgfergerughiwahiuhvlshfliwuhraefaiwh", "f", 0, -1, -1);
+    // const printTheFirstAndLastOccuranceInString = (str: string, key: string, i: number, firstOccurance: number, lastOccurance: number): void => {
+    //     if (i == str.length) {
+    //         process.stdout.write("First occurance happens at :- " + firstOccurance + " and last happens at :- " + lastOccurance);
+    //         return;
+    //     }
+    //     if (str.charAt(i) == key) {
+    //         if (firstOccurance == -1) firstOccurance = i;
+    //         else lastOccurance = i;
+    //     }
+    //     printTheFirstAndLastOccuranceInString(str, key, i + 1, firstOccurance, lastOccurance);
+    // };
+    // printTheFirstAndLastOccuranceInString("asdfasdfasdgfergerughiwahiuhvlshfliwuhraefaiwh", "f", 0, -1, -1);
 }
